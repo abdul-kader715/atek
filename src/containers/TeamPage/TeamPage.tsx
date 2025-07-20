@@ -1,0 +1,27 @@
+import { Fragment, type FC } from 'react';
+
+import FooterArea from '../../components/FooterArea/FooterArea';
+import HeaderArea from '../../components/HeaderArea/HeaderArea';
+import PageTitle from '../../components/PageTitle/PageTitle';
+import Scrollbar from '../../components/Scrollbar/Scrollbar';
+import TeamAreaS10 from '../../components/TeamAreaS10/TeamAreaS10';
+import CtaAreaS2 from '../../components/CtaAreaS2/CtaAreaS2';
+import BrandArea from '../../components/BrandArea/BrandArea';
+import GsapAnimetion from '../../components/GsapAnimetion/GsapAnimetion';
+
+const TeamPage: FC = () =>{
+  return (
+    <Fragment>
+      <GsapAnimetion />
+      <HeaderArea className="th-header header-layout1" />
+      <PageTitle pageTitle="Team Members" pagesub="Team Page" />
+      <TeamAreaS10 />
+      <CtaAreaS2 className="position-relative overflow-hidden space" />
+      <BrandArea className="brand-sec space-bottom" SecNote={true} />
+      <FooterArea className="footer-wrapper footer-layout1 black-bg space-top" />
+      <Scrollbar />
+    </Fragment>
+  );
+};
+
+export default TeamPage;
