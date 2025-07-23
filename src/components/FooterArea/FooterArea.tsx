@@ -219,35 +219,20 @@ const FooterArea: FC<FooterAreaProps> = ({
             </div>
          </div>
 
-         <div className="copyright-wrap">
+          <div className="copyright-wrap">
             <div className="container">
                <div className="row justify-content-lg-between align-items-center">
                   <div className="col-lg-6">
-                     <p className="copyright-text">
-                        Copyright © 2025{' '}
-                        <Link onClick={ClickHandler} to="/home">
-                           Atek
-                        </Link>. All Rights Reserved.
-                     </p>
+                     <p className="copyright-text">Copyright © 2025 <Link onClick={ClickHandler} to="/home">Atek</Link>. All Rights Reserved.</p>
                   </div>
                   <div className="col-lg-6 text-center text-lg-end">
-                     <ul className="footer-links">
-                        <li>
-                           <Link onClick={ClickHandler} to="/about">
-                              Terms & Conditions
-                           </Link>
-                        </li>
-                        <li>
-                           <Link onClick={ClickHandler} to="/about">
-                              Careers
-                           </Link>
-                        </li>
-                        <li>
-                           <Link onClick={ClickHandler} to="/about">
-                              Privacy Policy
-                           </Link>
-                        </li>
-                     </ul>
+                     <div className="footer-links">
+                        <ul>
+                           <li><Link onClick={ClickHandler} to="/about">Terms & Conditions</Link></li>
+                           <li><Link onClick={ClickHandler} to="/about">Careers</Link></li>
+                           <li><Link onClick={ClickHandler} to="/about">Privacy Policy</Link></li>
+                        </ul>
+                     </div>
                   </div>
                </div>
             </div>

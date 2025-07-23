@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState, type FC } from 'react';
 import { Link } from 'react-router-dom';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css/autoplay';
 import { Autoplay, Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import ProjectData from '../../api/project';
@@ -39,9 +36,12 @@ const ProjectAreaS3: FC<ProjectAreaS3Props> = ({ className }) => {
 
   // When swiper instance is ready, set navigation elements and update
   useEffect(() => {
-    if (swiperInstance && prevRef.current && nextRef.current) {
-      swiperInstance.params.navigation.prevEl = prevRef.current;
-      swiperInstance.params.navigation.nextEl = nextRef.current;
+    if (!swiperInstance || !prevRef.current || !nextRef.current) return;
+
+    const nav = swiperInstance.params.navigation;
+    if (nav && typeof nav !== 'boolean') {
+      nav.prevEl = prevRef.current;
+      nav.nextEl = nextRef.current;
       swiperInstance.navigation.init();
       swiperInstance.navigation.update();
     }
@@ -99,10 +99,10 @@ const ProjectAreaS3: FC<ProjectAreaS3Props> = ({ className }) => {
             ))}
           </Swiper>
           <button ref={prevRef} className="slider-arrow slider-prev" aria-label="Previous Slide">
-            <img src={left} alt="Previous" />
+            <img src={right} alt="Previous" />
           </button>
           <button ref={nextRef} className="slider-arrow slider-next" aria-label="Next Slide">
-            <img src={right} alt="Next" />
+            <img src={left} alt="Next" />
           </button>
         </div>
       </div>

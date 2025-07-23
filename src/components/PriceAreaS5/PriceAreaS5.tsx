@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState, type FC } from 'react';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
 import pricingData from '../../api/pricing';
 import bgimg from '../../img/bg/price_bg_4.jpg';
 import bg from '../../img/price/price_4_bg.jpg';

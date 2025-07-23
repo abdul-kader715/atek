@@ -1,13 +1,16 @@
-import { useState, type ChangeEvent, type MouseEvent } from "react";
+import { useState, type ChangeEvent, type FC, type MouseEvent } from "react";
 import api from "../../api/data.json";
 import ProductCart from "../shop/product-cart";
 import ProductCartS2 from "../shopS2/product-cartS2";
 
 interface Product {
   id: number;
+  title: string;
   name: string;
   price: number;
   [key: string]: any;
+  slug: string;
+  proImg: string;
 }
 
 interface ProductAreaProps {
@@ -15,7 +18,8 @@ interface ProductAreaProps {
   totalPages?: number;
 }
 
-const ProductArea: React.FC<ProductAreaProps> = ({ className }) => {
+
+const ProductArea: FC<ProductAreaProps> = ({ className }) => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [sortOrder, setSortOrder] = useState<string>("menu_order");
   const itemsPerPage = 8;

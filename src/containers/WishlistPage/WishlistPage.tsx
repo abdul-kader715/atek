@@ -69,7 +69,6 @@ const WishlistPage: React.FC = () => {
             <div className="tinv-header">
               <h2 className="mb-30">Wishlist</h2>
             </div>
-
             <table className="tinvwl-table-manage-list">
               <thead>
                 <tr>

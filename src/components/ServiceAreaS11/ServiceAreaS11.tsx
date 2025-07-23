@@ -1,7 +1,6 @@
 import { useEffect, useRef, type FC } from 'react';
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';
-import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ProjectData from '../../api/project';
@@ -170,3 +169,14 @@ const ServiceAreaS11: FC<ServiceAreaS11Props> = (props) => {
 };
 
 export default ServiceAreaS11;
+
+
+
+
+
+
+
+
+
+
+

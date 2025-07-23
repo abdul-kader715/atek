@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent, type MouseEvent } from 'react';
+import { useState, type ChangeEvent } from 'react';
 import { Link } from 'react-router-dom';
 import CareerData from '../../api/career';
 
@@ -37,9 +37,9 @@ const JobSortAndPagination: React.FC = () => {
     }
   };
 
-  const ClickHandler = (e: MouseEvent) => {
-    window.scrollTo(10, 0);
-  };
+ const ClickHandler = () => {
+  window.scrollTo(10, 0);
+};
 
   // You might want to sort CareerData here based on sortOrder before slicing
   // For now, we assume CareerData is already sorted or sorting not implemented.

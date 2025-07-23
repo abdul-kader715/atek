@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useEffect, useState, type FC } from 'react';
 import { Link } from 'react-router-dom';
 import FooterArea from '../../components/FooterArea/FooterArea';
 import HeaderArea from '../../components/HeaderArea/HeaderArea';
@@ -16,7 +16,7 @@ interface CartItem {
   // Add other product properties as needed
 }
 
-const CartPage: React.FC = () => {
+const CartPage: FC = () => {
   const [carts, setCarts] = useState<CartItem[]>([]);
   const [shippingMethod, setShippingMethod] = useState<"flat_rate" | "free_shipping">("flat_rate");
 

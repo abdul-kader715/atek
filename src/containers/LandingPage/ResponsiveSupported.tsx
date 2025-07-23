@@ -1,4 +1,4 @@
-import 'swiper/css';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import feaMask from './img/feature/fea-bg-mask.png';

@@ -1,9 +1,6 @@
 import { useRef, type FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 import testiImg from '../../img/normal/testi-img.png';
 import rightArrow from '../../img/icon/right-arrow2.svg';
@@ -88,10 +85,13 @@ const TestimonialSection: FC = () => {
                 }}
                 onInit={(swiper) => {
                   if (prevRef.current && nextRef.current) {
-                    swiper.params.navigation.prevEl = prevRef.current;
-                    swiper.params.navigation.nextEl = nextRef.current;
-                    swiper.navigation.init();
-                    swiper.navigation.update();
+                    const nav = swiper.params.navigation;
+                    if (nav && typeof nav !== 'boolean') {
+                      nav.prevEl = prevRef.current;
+                      nav.nextEl = nextRef.current;
+                      swiper.navigation.init();
+                      swiper.navigation.update();
+                    }
                   }
                 }}
                 className="testiSlide13"
@@ -114,16 +114,14 @@ const TestimonialSection: FC = () => {
                   </SwiperSlide>
                 ))}
                 <div className="slider-pagination"></div>
-              </Swiper>
-
-              <div className="icon-box">
+                <div className="icon-box">
                 <button
                   className="slider-arrow style7 default prev"
                   ref={prevRef}
                   aria-label="Previous testimonial"
                   type="button"
                 >
-                  <img src={leftArrow} alt="Previous" />
+                  <img src={rightArrow} alt="Previous" />
                 </button>
                 <button
                   className="slider-arrow style7 default next"
@@ -131,9 +129,12 @@ const TestimonialSection: FC = () => {
                   aria-label="Next testimonial"
                   type="button"
                 >
-                  <img src={rightArrow} alt="Next" />
+                  <img src={leftArrow} alt="Next" />
                 </button>
               </div>
+              </Swiper>
+
+              
             </div>
           </div>
         </div>

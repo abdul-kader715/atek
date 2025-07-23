@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import "swiper/css";
-import "swiper/css/navigation";
+
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from "../../img/choose/choose_1_1.jpg";

@@ -1,8 +1,7 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
+
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CaseData from "../../api/Case";

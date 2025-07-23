@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, type FC } from 'react';
 import ContactMapS2 from '../../components/ContactMapS2/ContactMapS2';
 import FooterArea from '../../components/FooterArea/FooterArea';
 import HeaderArea from '../../components/HeaderArea/HeaderArea';
@@ -18,7 +18,7 @@ interface ContactInfoItem {
   linkType: 'tel' | 'mailto' | 'href';
 }
 
-const ContactPage: React.FC = () => {
+const ContactPage: FC = () => {
   const contactInfo: ContactInfoItem[] = [
     {
       icon: 'fa-solid fa-headphones-simple',

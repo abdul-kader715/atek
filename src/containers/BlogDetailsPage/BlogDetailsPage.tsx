@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, type FC } from 'react';
 import { useParams } from 'react-router-dom';
 import BlogData from '../../api/blog';
 import BlogDetail from '../../components/BlogDetails/BlogDetails';
@@ -13,7 +13,7 @@ interface BlogPost {
   title: string;
 }
 
-const BlogDetailsPage: React.FC = () => {
+const BlogDetailsPage: FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const BlogDetails: BlogPost | undefined = BlogData.find((item: BlogPost) => item.slug === slug);
 

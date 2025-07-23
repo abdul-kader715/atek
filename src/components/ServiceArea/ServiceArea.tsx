@@ -2,7 +2,6 @@ import { useRef, useEffect, type FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
-import 'swiper/css';
 import ServiceData from '../../api/service';
 import servicebg from '../../img/bg/service_bg_1.jpg';
 import { Autoplay, Pagination } from 'swiper/modules';

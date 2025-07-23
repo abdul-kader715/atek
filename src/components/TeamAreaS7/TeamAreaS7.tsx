@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState, type FC } from 'react';
 import { Link } from 'react-router-dom';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,11 +8,7 @@ import teamBg from '../../img/bg/team_bg_4.jpg';
 import leftArrow from '../../img/icon/service-left.svg';
 import rightArrow from '../../img/icon/service-right.svg';
 
-interface TeamMember {
-  image9: string;
-  name: string;
-  slug: string;
-}
+
 
 interface SliderOptions {
   loop?: boolean;
@@ -48,7 +42,7 @@ const TeamAreaS7: FC<TeamAreaS7Props> = ({ sliderOptions = {} }) => {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const [swiperInstance, setSwiperInstance] = useState<any>(null); // can be typed more precisely if needed
+  const [, setSwiperInstance] = useState<any>(null); // can be typed more precisely if needed
 
   const mergedOptions = { ...defaultOptions, ...sliderOptions };
 
@@ -120,15 +114,18 @@ const TeamAreaS7: FC<TeamAreaS7Props> = ({ sliderOptions = {} }) => {
               nextEl: nextRef.current,
             }}
             onInit={(swiper) => {
-              swiper.params.navigation.prevEl = prevRef.current;
-              swiper.params.navigation.nextEl = nextRef.current;
-              swiper.navigation.init();
-              swiper.navigation.update();
+              const { navigation } = swiper.params;
+              if (navigation && typeof navigation !== 'boolean') {
+                navigation.prevEl = prevRef.current;
+                navigation.nextEl = nextRef.current;
+                swiper.navigation.init();
+                swiper.navigation.update();
+              }
             }}
             className="swiper th-slider has-shadow categorySlider teamSlider10"
             id="teamSlider10"
           >
-            {teamData.slice(0, 6).map((item: TeamMember, idx: number) => (
+            {teamData.slice(0, 6).map((item, idx: number) => (
               <SwiperSlide key={idx}>
                 <div className="th-team team-grid3 single">
                   <div className="team-img">

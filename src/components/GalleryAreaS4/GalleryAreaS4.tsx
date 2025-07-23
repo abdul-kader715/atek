@@ -1,6 +1,4 @@
 import React, { type FC } from 'react';
-import "swiper/css";
-import 'swiper/css/autoplay';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import G1 from '../../img/gallery/gallery_9_1.jpg';

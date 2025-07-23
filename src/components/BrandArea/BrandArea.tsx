@@ -1,8 +1,4 @@
 import React, { type FC } from 'react';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,7 +9,7 @@ import img3 from '../../img/brand/brand_1_3.svg';
 import img4 from '../../img/brand/brand_1_4.svg';
 import img5 from '../../img/brand/brand_1_5.svg';
 import img6 from '../../img/brand/brand_1_6.svg';
-import img7 from '../../img/brand/brand_1_1.svg';  // fixed duplicate import
+import img7 from '../../img/brand/brand_1_1.svg';  
 
 type BrandImage = {
   id: string;
@@ -28,7 +24,7 @@ const brandImages: BrandImage[] = [
   { id: '5', logo: img5 },
   { id: '6', logo: img6 },
   { id: '7', logo: img7 },
-  { id: '8', logo: img4 }, // repeated logo, kept as is
+  { id: '8', logo: img4 }, 
 ];
 
 interface BrandAreaProps {

@@ -23,7 +23,7 @@ const HomePageS13: FC = () => {
   return (
     <Fragment>
       <GsapAnimetion />
-      <HeaderAreaS9 className="th-header header-layout12 header-layout13" HeaderTop={false} />
+      <HeaderAreaS9 className="th-header header-layout12 header-layout13"  />
       <HeroAreaS13 />
       <BrandAreaS3 />
       <FeaturesArea />

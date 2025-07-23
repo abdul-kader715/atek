@@ -1,5 +1,4 @@
 
-import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import cateShape from './img/categorie/cate-shape.png';

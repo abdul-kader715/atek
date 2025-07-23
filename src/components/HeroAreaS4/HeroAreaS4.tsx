@@ -1,7 +1,5 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -17,7 +15,6 @@ const HeroSlider = () => {
       window.scrollTo(10, 0);
    };
 
-   const thumbsSwiperRef = useRef<null | any>(null);
 
    useEffect(() => {
       const animatedElements = document.querySelectorAll<HTMLElement>('[data-ani]');

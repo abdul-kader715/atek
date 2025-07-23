@@ -2,23 +2,13 @@ import { useRef, type FC } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 import teamData from "../../api/team";
 import bgimg from '../../img/bg/team_bg_2.jpg';
 import left from '../../img/icon/left-arrow2.svg';
 import right from '../../img/icon/right-arrow2.svg';
 import { Link } from "react-router-dom";
 
-interface TeamMember {
-  bg2: string;
-  image: string;
-  name: string;
-  designation: string;
-  slug: string;
-}
+
 
 interface TeamAreaS4Props {
   className?: string;
@@ -74,7 +64,7 @@ const TeamAreaS4: FC<TeamAreaS4Props> = ({ className }) => {
               1200: { slidesPerView: 3 },
             }}
           >
-            {teamData.slice(0, 4).map((item: TeamMember, index: number) => (
+            {teamData.slice(0, 4).map((item, index: number) => (
               <SwiperSlide key={index}>
                 <div className="th-team team-grid">
                   <div className="team-img">
@@ -109,10 +99,10 @@ const TeamAreaS4: FC<TeamAreaS4Props> = ({ className }) => {
 
           {/* Navigation buttons with refs */}
           <button ref={prevRef} className="slider-arrow slider-prev" aria-label="Previous Slide">
-            <img src={left} alt="Previous" />
+            <img src={right} alt="Previous" />
           </button>
           <button ref={nextRef} className="slider-arrow slider-next" aria-label="Next Slide">
-            <img src={right} alt="Next" />
+            <img src={left} alt="Next" />
           </button>
         </div>
       </div>

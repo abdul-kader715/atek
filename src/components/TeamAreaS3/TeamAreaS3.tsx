@@ -1,24 +1,12 @@
 import { type FC } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 import { Link } from "react-router-dom";
 import teamData from "../../api/team";
 import bgimg from '../../img/bg/team_bg_2.jpg';
 import left from '../../img/icon/left-arrow2.svg';
 import right from '../../img/icon/right-arrow2.svg';
 
-interface TeamMember {
-  bg: string;
-  image: string;
-  name: string;
-  designation: string;
-  slug: string;
-}
 
 interface TeamAreaS3Props {
   className?: string;
@@ -70,7 +58,7 @@ const TeamAreaS3: FC<TeamAreaS3Props> = ({ className }) => {
               1200: { slidesPerView: 3 },
             }}
           >
-            {teamData.slice(0, 4).map((item: TeamMember, index: number) => (
+            {teamData.slice(0, 4).map((item, index: number) => (
               <SwiperSlide key={index}>
                 <div className="th-team team-grid">
                   <div className="team-img">

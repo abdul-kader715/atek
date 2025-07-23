@@ -1,7 +1,4 @@
-import React, { useRef, useState } from 'react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
+import  { useRef, useState } from 'react';
 import { Navigation, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -48,7 +45,7 @@ const testimonialData: Testimonial[] = [
 ];
 
 export default function TestimonialSlider() {
-  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null); // swiper instance type is any here for simplicity
+  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null); 
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
 
@@ -66,9 +63,10 @@ export default function TestimonialSlider() {
         speed={settings.speed}
         navigation={{ prevEl: prevRef.current!, nextEl: nextRef.current! }}
         onBeforeInit={(swiper) => {
-          if (typeof swiper.params.navigation !== 'boolean') {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
+          const nav = swiper.params.navigation;
+          if (nav && typeof nav !== 'boolean') {
+            nav.prevEl = prevRef.current;
+            nav.nextEl = nextRef.current;
           }
         }}
         thumbs={{ swiper: thumbsSwiper }}

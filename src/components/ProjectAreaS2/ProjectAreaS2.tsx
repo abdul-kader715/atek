@@ -25,7 +25,6 @@ const ProjectAreaS2: FC<ProjectAreaS2Props> = (props) => {
           <span className="sub-title text-anime-style-2">Project Case Studies</span>
           <h2 className="sec-title text-anime-style-2">Our Recent Project Case Studies</h2>
         </div>
-
         <div className="row gy-4 case-row4">
           {ProjectData.slice(5, 13).map((item: ProjectItem, index: number) => (
             <div className="col-auto" key={index}>

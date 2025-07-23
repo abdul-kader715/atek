@@ -1,5 +1,5 @@
 import Lenis from '@studio-freight/lenis';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type FC } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Pages
@@ -45,15 +45,14 @@ import TeamPage from './TeamPage/TeamPage';
 import TeamdetailsPage from './TeamDetailsPage/TeamDetailsPage';
 import WishlistPage from './WishlistPage/WishlistPage';
 
-const App: React.FC = () => {
+const App: FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [showFadeAnimation, setShowFadeAnimation] = useState<boolean>(false);
 
   useEffect(() => {
     // Initialize Lenis smooth scrolling
     const lenis = new Lenis({
-      smooth: true,
-      direction: 'vertical',
+     
     });
 
     const raf = (time: number) => {

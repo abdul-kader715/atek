@@ -1,9 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -26,13 +22,14 @@ const slides: Slide[] = [
 ];
 
 type HeroSliderProps = {
-  ClickHandler: () => void;
+  ClickHandler?: () => void;
 };
 
 const HeroSlider: React.FC<HeroSliderProps> = ({ ClickHandler }) => {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
   const paginationRef = useRef<HTMLDivElement>(null);
+  const swiperRef = useRef<any>(null);
 
   useEffect(() => {
     const animatedElements = document.querySelectorAll<HTMLElement>('[data-ani]');
@@ -45,6 +42,24 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ ClickHandler }) => {
       }
     });
   }, []);
+
+  useEffect(() => {
+    if (
+      swiperRef.current &&
+      prevRef.current &&
+      nextRef.current &&
+      swiperRef.current.params.navigation
+    ) {
+      const nav = swiperRef.current.params.navigation;
+      if (typeof nav !== 'boolean') {
+        nav.prevEl = prevRef.current;
+        nav.nextEl = nextRef.current;
+      }
+      swiperRef.current.navigation.destroy();
+      swiperRef.current.navigation.init();
+      swiperRef.current.navigation.update();
+    }
+  }, [prevRef.current, nextRef.current]);
 
   return (
     <div className="hero-9" id="hero">
@@ -60,12 +75,8 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ ClickHandler }) => {
           effect="fade"
           slidesPerView={1}
           modules={[Pagination, Navigation, EffectFade, Autoplay]}
-          onBeforeInit={(swiper) => {
-            if (prevRef.current && nextRef.current && paginationRef.current) {
-              swiper.params.navigation.prevEl = prevRef.current;
-              swiper.params.navigation.nextEl = nextRef.current;
-              swiper.params.pagination.el = paginationRef.current;
-            }
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
           }}
           navigation={{
             prevEl: prevRef.current,

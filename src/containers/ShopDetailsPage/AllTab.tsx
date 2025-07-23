@@ -1,11 +1,11 @@
-import React from 'react';
+import  { type FC } from 'react';
 import Athor1 from '../../img/blog/comment-author-1.jpg';
 import Athor2 from '../../img/blog/comment-author-2.jpg';
 import Athor3 from '../../img/blog/comment-author-3.jpg';
 import Athor4 from '../../img/blog/comment-author-4.jpg';
 import ReviewForm from './ReviewForm';
 
-const AllTab: React.FC = () => {
+const AllTab: FC = () => {
    return (
       <div>
          <ul className="nav product-tab-style2" id="productTab" role="tablist">

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import 'swiper/css';
-import 'swiper/css/autoplay';
+
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import BlogData from "../../api/blog";

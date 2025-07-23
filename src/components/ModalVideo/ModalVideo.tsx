@@ -17,7 +17,6 @@ const VideoModal: FC<VideoModalProps> = ({ vidclass = '', imga = false, icona = 
     <>
       <ModalVideo
         channel="youtube"
-        autoplay
         isOpen={isOpen}
         videoId="pQpFebyALV0?si=gY2PUVXEboO9BLsI" 
         onClose={() => setOpen(false)}

@@ -12,7 +12,7 @@ const ServiceAreaS2: FC<ServiceAreaS2Props> = (props) => {
   };
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const [bgImages, setBgImages] = useState<string[]>([]);
+  const [, setBgImages] = useState<string[]>([]);
 
   useEffect(() => {
     const initialBgImages = ServiceData.slice(0, 4).map(item => item.image || "");

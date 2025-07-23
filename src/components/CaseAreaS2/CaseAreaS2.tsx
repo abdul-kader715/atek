@@ -1,8 +1,5 @@
 import { type FC } from 'react';
 import { Link } from 'react-router-dom';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CaseData from '../../api/Case';
 import category from '../../img/bg/category_3_bg.jpg';

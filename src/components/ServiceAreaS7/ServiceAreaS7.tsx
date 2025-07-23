@@ -1,10 +1,8 @@
 import gsap from 'gsap';
 import { useEffect, useRef, type FC } from 'react';
 import { Link } from 'react-router-dom';
-import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import 'swiper/css/autoplay';
 import ServiceData from '../../api/service';
 
 interface ServiceAreaS7Props {

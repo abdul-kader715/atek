@@ -2,11 +2,6 @@ import { useEffect, useRef, useState, type FC } from 'react';
 import { Link } from 'react-router-dom';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 import CategoryData from '../../api/category';
 import categorybg from '../../img/bg/category_bg_1.png';
 
@@ -42,7 +37,6 @@ const CategoryArea: FC<CategoryAreaProps> = ({
   sliderOptions = {},
 }) => {
   const mergedOptions = { ...defaultOptions, ...sliderOptions };
-  // Correct useState typing: setSwiperInstance is a setter function, we don't use the state value here
   const [, setSwiperInstance] = useState<any>(null);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
   const paginationRef = useRef<HTMLDivElement | null>(null);

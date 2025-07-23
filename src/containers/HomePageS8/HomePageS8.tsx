@@ -25,7 +25,7 @@ const HomePageS8: FC = () => {
          <ServiceAreaS8 className="service-area4 space smoke-bg overflow-hidden" />
          <ProjectAreaS3 className="project-area position-relative project-overlay overflow-hidden bg-top-center space background-image arrow-wrap" />
          <BrandArea className="brand-sec space-bottom" SecNote />
-         <TestimonialAreaS5 className="testi-area7 bg-smoke overflow-hidden space background-image" SecNote />
+         <TestimonialAreaS5 className="testi-area7 bg-smoke overflow-hidden space background-image"  />
          <TeamArea className="team-area space team-slider-1 background-image" />
          <ChooseUsArea  />
          <CounterAreaS3 className="counter-sec2 space" />

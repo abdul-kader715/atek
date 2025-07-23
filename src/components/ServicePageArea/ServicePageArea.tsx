@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ServiceData from '../../api/service';
 import type { FC } from 'react';
 
+
 const ServicePageArea: FC = () => {
   const ClickHandler = () => {
     window.scrollTo(10, 0);

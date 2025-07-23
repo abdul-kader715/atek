@@ -37,7 +37,8 @@
         font-weight: 400;
         transition: all 0.4s ease-in-out;
         background: $smoke-color;
-cursor: pointer;
+        cursor: pointer;
+
         @include vxs {
             font-size: 14px;
             width: 35px;
@@ -91,26 +92,28 @@ cursor: pointer;
     }
 }
 
-.pagination-title{
+.pagination-title {
     width: auto;
     height: auto;
     display: inline-block;
     margin: 0 15px;
 }
 
-.pagination-box2{
+.pagination-box2 {
     border: 1px solid $border-color;
     border-right: 0;
     border-left: 0;
     padding-top: 30px;
     padding-bottom: 30px;
-    & .pagination-icon{
+
+    & .pagination-icon {
         width: 55px;
         height: 55px;
         line-height: 55px;
         background: none;
         border: 1px solid $border-color;
-        &:hover{
+
+        &:hover {
             border-color: $theme-color;
         }
     }

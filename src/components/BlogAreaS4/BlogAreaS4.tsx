@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import 'swiper/css/autoplay';
 import BlogData from "../../api/blog";
 import shape from "../../img/shape/ab-1-shape-1.png";
 import shape2 from "../../img/shape/blog-1-shape.png";

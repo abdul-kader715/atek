@@ -1,8 +1,8 @@
-import React, { useState, type ChangeEvent, type FormEvent } from 'react';
+import { useState, type ChangeEvent, type FC, type FormEvent } from 'react';
 import bgImage from '../../img/bg/subscribe_bg_2.jpg';
 import planeIcon from '../../img/icon/plane.svg';
 
-const Newsletter: React.FC = () => {
+const Newsletter: FC = () => {
   const [email, setEmail] = useState<string>('');
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {

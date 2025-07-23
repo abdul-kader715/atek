@@ -1,9 +1,9 @@
-import 'swiper/css';
-import 'swiper/css/effect-fade';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { Swiper as SwiperClass } from 'swiper';
+
 import heroBg1 from '../../img/hero/hero_bg_12_1.jpg';
 import heroBg2 from '../../img/hero/hero_bg_12_2.jpg';
 import arrowLeft from '../../img/icon/left-arrow2.svg';
@@ -34,7 +34,8 @@ const slides = [
 ];
 
 const HeroSection = () => {
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<SwiperClass | null>(null);
+
   const ClickHandler = () => {
     window.scrollTo(10, 0);
   };
@@ -50,13 +51,16 @@ const HeroSection = () => {
   };
 
   useEffect(() => {
-    const animatedElements = document.querySelectorAll('[data-ani]');
-    animatedElements.forEach((el) => {
-      const animation = el.getAttribute('data-ani');
-      const delay = el.getAttribute('data-ani-delay') || '0s';
-      el.classList.add(animation);
-      el.style.animationDelay = delay;
-    });
+    document
+      .querySelectorAll<HTMLElement>('[data-ani]')
+      .forEach((el) => {
+        const animation = el.getAttribute('data-ani');
+        const delay = el.getAttribute('data-ani-delay') || '0s';
+        if (animation) {
+          el.classList.add(animation);
+          el.style.animationDelay = delay;
+        }
+      });
   }, []);
 
   return (
@@ -105,12 +109,18 @@ const HeroSection = () => {
         ))}
       </Swiper>
 
-      <button onClick={() => swiperRef.current?.slidePrev()} className="slider-arrow slider-prev">
-        <img src={arrowLeft} alt="Previous Slide" />
+      <button
+        onClick={() => swiperRef.current?.slidePrev()}
+        className="slider-arrow slider-prev"
+      >
+        <img src={arrowRight} alt="Previous Slide" />
       </button>
 
-      <button onClick={() => swiperRef.current?.slideNext()} className="slider-arrow slider-next">
-        <img src={arrowRight} alt="Next Slide" />
+      <button
+        onClick={() => swiperRef.current?.slideNext()}
+        className="slider-arrow slider-next"
+      >
+        <img src={arrowLeft} alt="Next Slide" />
       </button>
     </div>
   );

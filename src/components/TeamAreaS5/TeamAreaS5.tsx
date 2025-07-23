@@ -1,17 +1,9 @@
 import { type FC } from 'react';
 import { Link } from 'react-router-dom';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import teamData from '../../api/team';
 
-interface TeamMember {
-  image9: string;
-  name: string;
-  slug: string;
-}
 
 interface TeamAreaS5Props {
   className?: string;
@@ -57,7 +49,7 @@ const TeamAreaS5: FC<TeamAreaS5Props> = ({ className }) => {
             autoplay={settings.autoplay}
             modules={[Autoplay, Pagination]}
           >
-            {teamData.slice(0, 6).map((item: TeamMember, itx: number) => (
+            {teamData.slice(0, 6).map((item, itx: number) => (
               <SwiperSlide key={itx}>
                 <div className="th-team team-grid2">
                   <div className="team-img">

@@ -1,9 +1,6 @@
 import { useEffect, useRef, type FC } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/navigation';
 import { Autoplay, EffectCoverflow, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -95,13 +92,23 @@ const CaseAreaS3: FC<CaseAreaS3Props> = ({ className }) => {
               pauseOnMouseEnter: true,
             }}
             navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
+              prevEl: prevRef.current!,
+              nextEl: nextRef.current!,
             }}
-            onBeforeInit={(swiper) => {
-              if (typeof swiper.params.navigation !== 'boolean') {
-                swiper.params.navigation.prevEl = prevRef.current;
-                swiper.params.navigation.nextEl = nextRef.current;
+            onSwiper={(swiper) => {
+              if (prevRef.current && nextRef.current) {
+                if (typeof swiper.params.navigation !== 'boolean' && swiper.params.navigation) {
+                  swiper.params.navigation.prevEl = prevRef.current;
+                  swiper.params.navigation.nextEl = nextRef.current;
+                } else {
+                  swiper.params.navigation = {
+                    prevEl: prevRef.current,
+                    nextEl: nextRef.current,
+                  };
+                }
+
+                swiper.navigation.init();
+                swiper.navigation.update();
               }
             }}
             coverflowEffect={{
@@ -140,10 +147,10 @@ const CaseAreaS3: FC<CaseAreaS3Props> = ({ className }) => {
           </Swiper>
 
           <div className="icon-box mt-60 text-center">
-            <button ref={nextRef} className="slider-arrow style5 default" aria-label="Next Slide">
+            <button ref={prevRef} className="slider-arrow style5 default" aria-label="Next Slide">
               <img src={right} alt="next" />
             </button>
-            <button ref={prevRef} className="slider-arrow style5 default" aria-label="Previous Slide">
+            <button ref={nextRef} className="slider-arrow style5 default" aria-label="Previous Slide">
               <img src={left} alt="prev" />
             </button>
           </div>

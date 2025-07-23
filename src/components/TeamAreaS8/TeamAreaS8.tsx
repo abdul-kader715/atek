@@ -1,7 +1,5 @@
 import { useEffect, useRef, type FC } from "react";
 import { Link } from "react-router-dom";
-import "swiper/css";
-import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import teamData from "../../api/team";

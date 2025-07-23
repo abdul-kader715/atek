@@ -73,7 +73,7 @@ const HeroAreaS13: FC = () => {
           <span className="hero13-shape-left th-line-shape d-none d-md-block">
             <span>
               <svg width="446" height="453" viewBox="0 0 446 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path className="line-1" opacity="0.5" d="M421.561 558C470.228 299.333 423.161 -159.2 -154.439 76" stroke="currentColor" strokeWidth="20" />
+                    <path className="line-1" opacity="0.5" d="M421.561 558C470.228 299.333 423.161 -159.2 -154.439 76" stroke="currentColor" strokeWidth="20" />
                </svg>
             </span>
           </span>

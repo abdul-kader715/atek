@@ -1,6 +1,4 @@
 import { type FC } from 'react';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 

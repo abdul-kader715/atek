@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-import { useState, type ChangeEvent, type MouseEvent } from "react";
+import { useState, type ChangeEvent, type FC, type MouseEvent } from "react";
 import { Link } from "react-router-dom";
 import './modal.css';
 
@@ -18,7 +18,7 @@ interface ProductCartProps {
   product: Product;
 }
 
-const ProductCart: React.FC<ProductCartProps> = ({ product }) => {
+const ProductCart: FC<ProductCartProps> = ({ product }) => {
   const ClickHandler = () => {
     window.scrollTo(10, 0);
   };

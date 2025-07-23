@@ -1,22 +1,22 @@
-import { type FC } from 'react';
 import { Link } from 'react-router-dom';
 import checkIcon from '../../img/icon/checkmark.svg';
 import leftArrow from '../../img/icon/left-arrow3.svg';
+import type { FC } from 'react';
 
-interface Feature {
+interface PackageFeature {
   label: string;
   available: boolean;
 }
 
-interface Package {
+interface PricingPackage {
   title: string;
   price: number;
   billing: string;
   active?: boolean;
-  features: Feature[];
+  features: PackageFeature[];
 }
 
-const packages: Package[] = [
+const packages: PricingPackage[] = [
   {
     title: 'Basic Package',
     price: 35,
@@ -56,7 +56,7 @@ const packages: Package[] = [
   },
 ];
 
-const PricingSection: FC = () => {
+const PricingSection: FC =() => {
   return (
     <section className="space">
       <div className="container">

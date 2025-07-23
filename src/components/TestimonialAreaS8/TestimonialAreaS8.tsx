@@ -1,7 +1,4 @@
 import { useRef, type FC } from 'react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -75,10 +72,13 @@ const TestimonialSlider: FC = () => {
             modules={[Navigation, Pagination, Autoplay]}
             onInit={(swiper) => {
               if (prevRef.current && nextRef.current) {
-                swiper.params.navigation.prevEl = prevRef.current;
-                swiper.params.navigation.nextEl = nextRef.current;
-                swiper.navigation.init();
-                swiper.navigation.update();
+                const nav = swiper.params.navigation;
+                if (nav && typeof nav !== 'boolean') {
+                  nav.prevEl = prevRef.current;
+                  nav.nextEl = nextRef.current;
+                  swiper.navigation.init();
+                  swiper.navigation.update();
+                }
               }
             }}
             spaceBetween={24}
@@ -118,10 +118,10 @@ const TestimonialSlider: FC = () => {
             <div className="slider-pagination" />
 
             <button className="slider-arrow style7 slider-prev" ref={prevRef} aria-label="Previous slide">
-              <img src={arrowLeft} alt="Previous" />
+              <img src={arrowRight} alt="Previous" />
             </button>
             <button className="slider-arrow style7 slider-next" ref={nextRef} aria-label="Next slide">
-              <img src={arrowRight} alt="Next" />
+              <img src={arrowLeft} alt="Next" />
             </button>
           </Swiper>
         </div>

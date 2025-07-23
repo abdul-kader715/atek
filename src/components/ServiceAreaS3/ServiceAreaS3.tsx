@@ -1,7 +1,4 @@
 import { type FC } from 'react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 import { Autoplay, Pagination } from 'swiper/modules';

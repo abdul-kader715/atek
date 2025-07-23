@@ -2,21 +2,11 @@ import { type FC } from 'react';
 import { Link } from 'react-router-dom';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import ServiceData from '../../api/service';
 import bgimg from '../../img/bg/service_bg_4.jpg';
 import left from '../../img/icon/left-arrow2.svg';
 import right from '../../img/icon/right-arrow2.svg';
 
-interface ServiceItem {
-  slug: string;
-  image2: string;
-  Icon: string;
-  title2: string;
-  description2: string;
-}
 
 interface ServiceAreaS4Props {
   className?: string;
@@ -80,7 +70,7 @@ const ServiceAreaS4: FC<ServiceAreaS4Props> = (props) => {
               1200: { slidesPerView: 3 },
             }}
           >
-            {ServiceData.slice(0, 4).map((item: ServiceItem, index: number) => (
+            {ServiceData.slice(0, 4).map((item, index: number) => (
               <SwiperSlide key={index}>
                 <div className="service-item style4 th-ani">
                   <div className="service-img position-relative">

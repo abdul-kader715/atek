@@ -1,7 +1,4 @@
 import { useRef, useState } from 'react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
 import { Navigation, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -66,9 +63,10 @@ export default function TestimonialSlider() {
         speed={settings.speed}
         navigation={{ prevEl: prevRef.current!, nextEl: nextRef.current! }}
         onBeforeInit={(swiper) => {
-          if (typeof swiper.params.navigation !== 'boolean') {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
+          const nav = swiper.params.navigation;
+          if (nav && typeof nav !== 'boolean') {
+            nav.prevEl = prevRef.current;
+            nav.nextEl = nextRef.current;
           }
         }}
         thumbs={{ swiper: thumbsSwiper }}

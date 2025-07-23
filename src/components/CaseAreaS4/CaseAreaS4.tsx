@@ -45,8 +45,10 @@ const CaseStudies = () => {
     const imgLoad = imagesLoaded(gridRef.current);
 
     imgLoad.on('always', () => {
-      // Initialize Isotope after all images loaded
-      isoRef.current = new Isotope(gridRef.current, {
+      const grid = gridRef.current;
+      if (!grid) return;
+
+      isoRef.current = new Isotope(grid, {
         itemSelector: '.grid-item',
         layoutMode: 'masonry',
         percentPosition: true,
@@ -55,6 +57,7 @@ const CaseStudies = () => {
         },
       });
     });
+
 
     return () => {
       if (isoRef.current) {

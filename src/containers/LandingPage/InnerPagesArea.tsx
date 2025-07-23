@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import innerPages from './innerData';
