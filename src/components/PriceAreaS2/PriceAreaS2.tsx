@@ -1,7 +1,7 @@
 import { type FC } from 'react';
 import { Link } from 'react-router-dom';
 import checkIcon from '../../img/icon/price-check.svg';
-import bgImage from '../../img/bg/price_bg.png';
+import bgImage from '../../img/bg/price_bg.webp';
 
 interface PricingPlan {
   title: string;

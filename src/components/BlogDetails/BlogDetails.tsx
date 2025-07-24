@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom';
 import BlogData from '../../api/blog';
-import blog1 from '../../img/blog/blog_inner_1.jpg';
-import blog2 from '../../img/blog/blog_inner_2.jpg';
-import blogAtho from '../../img/blog/blog-s-1-4.jpg';
-import author1 from '../../img/blog/comment-author-1.jpg';
-import author2 from '../../img/blog/comment-author-2.jpg';
-import author3 from '../../img/blog/comment-author-3.jpg';
+import blog1 from '../../img/blog/blog_inner_1.webp';
+import blog2 from '../../img/blog/blog_inner_2.webp';
+import blogAtho from '../../img/blog/blog-s-1-4.webp';
+import author1 from '../../img/blog/comment-author-1.webp';
+import author2 from '../../img/blog/comment-author-2.webp';
+import author3 from '../../img/blog/comment-author-3.webp';
 import map from '../../img/icon/map.svg';
 import BlogSidBar from '../BlogSidBar/BlogSidBar';
 import CommentForm from '../CommentForm/CommentForm';

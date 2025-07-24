@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import recent from '../../img/blog/recent-post-1-1.jpg';
-import recent2 from '../../img/blog/recent-post-1-2.jpg';
+import recent from '../../img/blog/recent-post-1-1.webp';
+import recent2 from '../../img/blog/recent-post-1-2.webp';
 import envelope from '../../img/icon/envelope.svg';
 import location from '../../img/icon/location-dot.svg';
 import Sidebar from '../../img/icon/menu.svg';

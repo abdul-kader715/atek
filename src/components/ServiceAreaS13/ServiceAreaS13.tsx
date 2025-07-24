@@ -1,9 +1,9 @@
 import { useState, type FC } from 'react';
 import { Link } from 'react-router-dom';
-import gallery1 from '../../img/gallery/gallery-2-1.jpg';
-import gallery2 from '../../img/gallery/gallery-2-2.jpg';
-import gallery3 from '../../img/gallery/gallery-2-3.jpg';
-import gallery4 from '../../img/gallery/gallery-2-4.jpg';
+import gallery1 from '../../img/gallery/gallery-2-1.webp';
+import gallery2 from '../../img/gallery/gallery-2-2.webp';
+import gallery3 from '../../img/gallery/gallery-2-3.webp';
+import gallery4 from '../../img/gallery/gallery-2-4.webp';
 
 interface ServiceAreaS2Props {
   className?: string;

@@ -2,7 +2,7 @@ import { type FC } from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CaseData from '../../api/Case';
-import category from '../../img/bg/category_3_bg.jpg';
+import category from '../../img/bg/category_3_bg.webp';
 import { Autoplay, Pagination } from 'swiper/modules';
 
 interface CaseItem {

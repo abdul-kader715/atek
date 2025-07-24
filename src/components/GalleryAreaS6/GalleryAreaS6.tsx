@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import gallery1 from '../../img/gallery/gallery_15_1.png';
-import gallery2 from '../../img/gallery/gallery_15_2.png';
-import gallery3 from '../../img/gallery/gallery_15_3.png';
-import gallery4 from '../../img/gallery/gallery_15_4.png';
-import gallery5 from '../../img/gallery/gallery_15_5.png';
-import gallery6 from '../../img/gallery/gallery_15_7.png';
+import gallery1 from '../../img/gallery/gallery_15_1.webp';
+import gallery2 from '../../img/gallery/gallery_15_2.webp';
+import gallery3 from '../../img/gallery/gallery_15_3.webp';
+import gallery4 from '../../img/gallery/gallery_15_4.webp';
+import gallery5 from '../../img/gallery/gallery_15_5.webp';
+import gallery6 from '../../img/gallery/gallery_15_7.webp';
 import './GallerySection.css';
 
 interface GalleryItem {

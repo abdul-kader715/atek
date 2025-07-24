@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ServiceData from '../../api/service';
-import servicebg from '../../img/bg/service_bg_1.jpg';
+import servicebg from '../../img/bg/service_bg_1.webp';
 import { Autoplay, Pagination } from 'swiper/modules';
 
 interface ServiceAreaProps {

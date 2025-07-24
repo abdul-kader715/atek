@@ -1,4 +1,4 @@
-import React, { useRef, useState, type ChangeEvent, type FormEvent } from 'react';
+import  { useRef, useState, type ChangeEvent, type FormEvent } from 'react';
 import SimpleReactValidator from 'simple-react-validator';
 import user from '../../img/icon/user.svg';
 import mail from '../../img/icon/mail.svg';
@@ -24,7 +24,7 @@ const ContactForm = () => {
         message: '',
     });
 
-    const [forceUpdate, setForceUpdate] = useState<number>(0);
+    const [, setForceUpdate] = useState<number>(0);
     const validator = useRef(
         new SimpleReactValidator({
             autoForceUpdate: { forceUpdate: () => setForceUpdate(prev => prev + 1) }

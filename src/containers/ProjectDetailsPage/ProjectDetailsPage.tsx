@@ -5,10 +5,10 @@ import FooterArea from '../../components/FooterArea/FooterArea';
 import HeaderArea from '../../components/HeaderArea/HeaderArea';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
-import project from '../../img/project/project-dsc.jpg';
-import project1 from '../../img/service/sv-sm-1.jpg';
-import project2 from '../../img/service/sv-sm-2.jpg';
-import widget from '../../img/bg/widget_banner.jpg';
+import project from '../../img/project/project-dsc.webp';
+import project1 from '../../img/service/sv-sm-1.webp';
+import project2 from '../../img/service/sv-sm-2.webp';
+import widget from '../../img/bg/widget_banner.webp';
 import GsapAnimetion from '../../components/GsapAnimetion/GsapAnimetion';
 
 interface Project {

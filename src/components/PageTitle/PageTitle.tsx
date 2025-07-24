@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { Link } from 'react-router-dom';
-import bgImage from '../../img/bg/breadcumb-bg.jpg';
+import bgImage from '../../img/bg/breadcumb-bg.webp';
 
 interface PageTitleProps {
   pageTitle: string;

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import hero1 from '../../img/hero/hero_4_1.jpg';
-import hero2 from '../../img/hero/hero_4_2.jpg';
-import hero3 from '../../img/hero/hero_4_3.jpg';
-import bg from '../../img/hero/hero_bg_4_1.jpg';
+import hero1 from '../../img/hero/hero_4_1.webp';
+import hero2 from '../../img/hero/hero_4_2.webp';
+import hero3 from '../../img/hero/hero_4_3.webp';
+import bg from '../../img/hero/hero_bg_4_1.webp';
 
 const HeroSlider = () => {
    const slides = [hero1, hero2, hero3];

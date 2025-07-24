@@ -1,7 +1,7 @@
 import { type FC } from 'react';
 import testim from '../../img/testimonial/testi-img1.jpg';
 import testim2 from '../../img/testimonial/testi-img2.jpg';
-import map2 from '../../img/bg/map2.png';
+import map2 from '../../img/bg/map2.webp';
 import TestimonialSlider from '../TestimonialSliderS2/TestimonialSliderS2';
 
 interface TestimonialAreaS5Props {

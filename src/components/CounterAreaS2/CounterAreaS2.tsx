@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 import CountUp from 'react-countup';
-import line from '../../img/bg/line-pattern.png';
+import line from '../../img/bg/line-pattern.webp';
 
 // Define props type
 interface CounterAreaS2Props {

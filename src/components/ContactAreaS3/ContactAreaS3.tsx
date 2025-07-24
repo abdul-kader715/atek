@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import bg from '../../img/bg/contact_bg_3.jpg';
+import bg from '../../img/bg/contact_bg_3.webp';
 import ContactForm from '../ContactForm/ContactForm';
 
 interface ContactAreaS3Props {

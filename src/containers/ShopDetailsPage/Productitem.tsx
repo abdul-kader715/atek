@@ -3,12 +3,19 @@ import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
 
 interface ProductItem {
-  id: string | number;
-  proImg: string;
-  price: number;
-  delPrice?: number;
-  title: string;
-  // Add other properties as needed
+  Tag?: string,
+  brand?: string,
+  category?: string,
+  delPrice?: string | number,
+  id?: string | number,
+  price?: string | number,
+  proImg?: string,
+  singImg?: string, 
+  size?: string
+  slug?: string,
+  stock?: string,
+  title?: string,
+  
 }
 
 interface ProductProps {
@@ -45,7 +52,8 @@ const Product: React.FC<ProductProps> = ({ item }) => {
     if (existingItemIndex !== -1) {
       updatedCart[existingItemIndex].quantity += quantity;
     } else {
-      updatedCart.push({ ...item, quantity });
+       updatedCart.push({ ...item, quantity } as { id: string | number; quantity: number } & ProductItem);
+      console.error("Item is missing an 'id' and cannot be added to cart.", item);
     }
 
     Cookies.set("carts", JSON.stringify(updatedCart), { expires: 30 });

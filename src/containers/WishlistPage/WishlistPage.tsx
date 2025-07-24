@@ -11,7 +11,6 @@ interface WishlistItem {
   proImg: string;
   title: string;
   price: number;
-  // Add other product properties as needed
 }
 
 const WishlistPage: React.FC = () => {

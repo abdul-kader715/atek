@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import '../../components/Gallery/GalleryPopup.css';
 // Images
-import Im1 from '../../img/gallery/gallery_2_1.jpg';
-import Im2 from '../../img/gallery/gallery_2_2.jpg';
-import Im3 from '../../img/gallery/gallery_2_3.jpg';
-import Im4 from '../../img/gallery/gallery_2_4.jpg';
-import Im5 from '../../img/gallery/gallery_2_5.jpg';
-import Im6 from '../../img/gallery/gallery_2_6.jpg';
+import Im1 from '../../img/gallery/gallery_2_1.webp';
+import Im2 from '../../img/gallery/gallery_2_2.webp';
+import Im3 from '../../img/gallery/gallery_2_3.webp';
+import Im4 from '../../img/gallery/gallery_2_4.webp';
+import Im5 from '../../img/gallery/gallery_2_5.webp';
+import Im6 from '../../img/gallery/gallery_2_6.webp';
 
 const GalleryPopup = () => {
   const [popupImage, setPopupImage] = useState<string | null>(null);

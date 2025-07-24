@@ -9,9 +9,9 @@ import {
 } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import hero1 from "../../img/hero/hero_10_1.jpg";
-import hero2 from "../../img/hero/hero_10_2.jpg";
-import hero3 from "../../img/hero/hero_10_3.jpg";
+import hero1 from "../../img/hero/hero_10_1.webp";
+import hero2 from "../../img/hero/hero_10_2.webp";
+import hero3 from "../../img/hero/hero_10_3.webp";
 import iconChipset from "../../img/icon/chipset.svg";
 import down from "../../img/icon/down-arrow.svg";
 import arrowLeft from "../../img/icon/hero-arrow-left.svg";

@@ -3,9 +3,9 @@ import { Autoplay, EffectFade, Navigation, Pagination, Thumbs } from 'swiper/mod
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ScrollLink from "../ScrollLink/ScrollLink";
 import { Link } from 'react-router-dom';
-import pattern from '../../img/bg/line-pattern.png';
-import bg1 from '../../img/hero/hero_bg_2_1.jpg';
-import bg2 from '../../img/hero/hero_bg_2_2.jpg';
+import pattern from '../../img/bg/line-pattern.webp';
+import bg1 from '../../img/hero/hero_bg_2_1.webp';
+import bg2 from '../../img/hero/hero_bg_2_2.webp';
 import arrowLeft from '../../img/icon/hero-arrow-left.svg';
 import arrowRight from '../../img/icon/hero-arrow-right.svg';
 import down from '../../img/icon/down-arrow.svg';

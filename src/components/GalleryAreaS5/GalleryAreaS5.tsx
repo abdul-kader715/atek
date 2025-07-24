@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 
 // Import images
-import img1 from '../../img/gallery/gallery_12_2.jpg';
-import img2 from '../../img/gallery/gallery_12_3.jpg';
-import img3 from '../../img/gallery/gallery_12_4.jpg';
-import img4 from '../../img/gallery/gallery_12_5.jpg';
-import img5 from '../../img/gallery/gallery_12_6.jpg';
+import img1 from '../../img/gallery/gallery_12_2.webp';
+import img2 from '../../img/gallery/gallery_12_3.webp';
+import img3 from '../../img/gallery/gallery_12_4.webp';
+import img4 from '../../img/gallery/gallery_12_5.webp';
+import img5 from '../../img/gallery/gallery_12_6.webp';
 
 const galleryImages = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img1];
 

@@ -1,12 +1,12 @@
-import React, { type FC } from 'react';
+import { type FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import G1 from '../../img/gallery/gallery_9_1.jpg';
-import G2 from '../../img/gallery/gallery_9_2.jpg';
-import G3 from '../../img/gallery/gallery_9_3.jpg';
-import G4 from '../../img/gallery/gallery_9_4.jpg';
-import G5 from '../../img/gallery/gallery_9_5.jpg';
-import G6 from '../../img/gallery/gallery_9_6.jpg';
+import G1 from '../../img/gallery/gallery_9_1.webp';
+import G2 from '../../img/gallery/gallery_9_2.webp';
+import G3 from '../../img/gallery/gallery_9_3.webp';
+import G4 from '../../img/gallery/gallery_9_4.webp';
+import G5 from '../../img/gallery/gallery_9_5.webp';
+import G6 from '../../img/gallery/gallery_9_6.webp';
 
 interface GalleryItem {
   img: string;
@@ -19,7 +19,7 @@ const galleryItems: GalleryItem[] = [
   { img: G4 },
   { img: G5 },
   { img: G6 },
-  { img: G3 }, 
+  { img: G3 },
 ];
 
 interface GalleryAreaS4Props {

@@ -8,7 +8,7 @@ interface BlogItem {
   date: string;
   minet: string;
   gridPage: string;
-  [key: string]: any; // fallback for other props if needed
+  [key: string]: any; 
 }
 
 const BlogGrid: FC = () => {

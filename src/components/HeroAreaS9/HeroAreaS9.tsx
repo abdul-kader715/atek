@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import hero1 from '../../img/hero/hero_9_1.jpg';
-import hero2 from '../../img/hero/hero_9_2.jpg';
-import hero3 from '../../img/hero/hero_9_3.jpg';
+import hero1 from '../../img/hero/hero_9_1.webp';
+import hero2 from '../../img/hero/hero_9_2.webp';
+import hero3 from '../../img/hero/hero_9_3.webp';
 import arrowLeft from '../../img/icon/hero-arrow-left.svg';
 import arrowRight from '../../img/icon/hero-arrow-right.svg';
 import marquee from '../../img/icon/marquee-icon.svg';

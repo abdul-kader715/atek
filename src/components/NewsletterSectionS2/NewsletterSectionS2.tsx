@@ -1,5 +1,5 @@
 import { useState, type ChangeEvent, type FC, type FormEvent } from 'react';
-import bgImage from '../../img/bg/subscribe_bg_2.jpg';
+import bgImage from '../../img/bg/subscribe_bg_2.webp';
 import planeIcon from '../../img/icon/plane.svg';
 
 const Newsletter: FC = () => {

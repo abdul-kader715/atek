@@ -520,6 +520,7 @@
         border-radius: 8px;
         width: 424px;
         display: flex;
+
         @include xl {
             width: -webkit-fill-available;
         }
@@ -585,6 +586,7 @@
     right: -88px;
     margin-right: 0 !important;
     padding-right: 400px;
+
     &.style2 {
 
         bottom: 70px;
@@ -1954,9 +1956,10 @@
 }
 
 .hero-7 {
-   .srv-validation-message{
-      color: red;
-   }
+    .srv-validation-message {
+        color: red;
+    }
+
     & .th-hero-bg {
         position: absolute;
 
@@ -1982,6 +1985,7 @@
             padding-bottom: 120px;
             margin-right: 0;
         }
+
         @include md {
             padding-top: 80px;
             padding-bottom: 80px;
@@ -1995,8 +1999,9 @@
                 color: $body-color;
             }
         }
-        option{
-          color: $body-color;
+
+        option {
+            color: $body-color;
         }
 
         &::after {
@@ -2045,14 +2050,15 @@
         }
 
         & .form-group {
-            & .form-select{
+            & .form-select {
                 line-height: 56px;
             }
 
             & .form-control,
             & .form-select {
                 height: 56px;
-                &:focus{
+
+                &:focus {
                     border-color: $white-color
                 }
             }
@@ -2097,7 +2103,8 @@
     & .hero-text {
         font-size: 18px;
         max-width: 593px;
-        @include lg{
+
+        @include lg {
             text-align: center;
             margin: auto;
             margin-bottom: 35px;
@@ -2237,6 +2244,12 @@
 /* hero 5 start ----------------------*/
 .hero-8 {
     overflow: visible;
+
+    .company-wrapp .icon {
+        i {
+            display: none;
+        }
+    }
 
     .th-hero-image {
         position: absolute;
@@ -2884,8 +2897,10 @@
         bottom: 80px;
         max-width: 294px;
         height: 85px;
+
         .swiper-slide {
-         width: 90px !important;
+            width: 90px !important;
+
             &.swiper-slide-thumb-active {
                 .hero10-card {
                     .hero-img {
@@ -3050,6 +3065,7 @@
             z-index: 3;
             transition: 0.4s;
             border-radius: 50%;
+
             img {
                 width: 82px;
                 height: 82px;
@@ -3120,6 +3136,7 @@
     @media (max-width: 320px) {
         padding: 80px 0 600px 0;
     }
+
     .hero {
         &-title {
             font-weight: 800;
@@ -3172,6 +3189,7 @@
             max-width: 767px;
             margin: auto;
             margin-bottom: 40px;
+
             @include xs {
                 font-size: 16px;
             }

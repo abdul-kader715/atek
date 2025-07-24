@@ -1,3 +1,4 @@
+import  { type FC, type MouseEvent } from 'react';
 
 import heroBg from './img/hero-bg.jpg';
 import arrowShape from './img/arrow-shape.png';
@@ -11,8 +12,8 @@ import hero2 from './img/hero/hero-img-2.png';
 import hero3 from './img/hero/hero-img-3.png';
 import hero4 from './img/hero/hero-img-4.png';
 
-const HeroSection = () => {
-  const handleScroll = (e, targetId) => {
+const HeroSection: FC = () => {
+  const handleScroll = (e: MouseEvent<HTMLAnchorElement>, targetId: string): void => {
     e.preventDefault();
     const target = document.getElementById(targetId);
     if (target) {
@@ -40,7 +41,7 @@ const HeroSection = () => {
                   <li><img src={css3Icon} alt="CSS3" /></li>
                   <li><img src={sassIcon} alt="Sass" /></li>
                   <li><img src={bootstrapIcon} width="43" alt="Bootstrap" /></li>
-                  <li><img src={codeIcon} width="43" alt="Code" /></li>
+                  <li><img src={codeIcon} width="43" alt="React" /></li>
                 </ul>
               </div>
 

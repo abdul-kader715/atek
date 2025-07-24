@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import ModalVideo from '../ModalVideo/ModalVideo';
-import center from '../../img/hero/card-center.png';
-import card from '../../img/hero/card-left.png';
-import right from '../../img/hero/card-right.png';
-import hero13 from '../../img/hero/hero13-bg.jpg';
+import center from '../../img/hero/card-center.webp';
+import card from '../../img/hero/card-left.webp';
+import right from '../../img/hero/card-right.webp';
+import hero13 from '../../img/hero/hero13-bg.webp';
 import hero13_shape from '../../img/shape/hero13-shape.png';
 import CircleTextS2 from '../CircleTextS2/CircleTextS2';
 import type { FC } from 'react';

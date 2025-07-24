@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import contact_bg from '../../img/bg/contact_bg_6.jpg';
+import contact_bg from '../../img/bg/contact_bg_6.webp';
 import VideoModal from '../ModalVideo/ModalVideo';
 import type { FC } from 'react';
 

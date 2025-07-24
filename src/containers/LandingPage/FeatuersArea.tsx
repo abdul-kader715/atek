@@ -12,68 +12,71 @@ import supportIcon from './img/icons/support.svg';
 import swiperIcon from './img/icons/swiper.svg';
 import w3cIcon from './img/icons/w3c.svg';
 import wooIcon from './img/icons/woocommerce.svg';
+import type { FC } from 'react';
 
-const PluginItem = ({ icon, title, description }) => (
-   <div className="plugin-item text-center text-sm-start d-sm-flex">
-      <div className="plugin-icon">
-         <img src={icon} alt="icon" />
-      </div>
-      <div className="plugin-content">
-         <h4 className="plugin-item-title">{title}</h4>
-         <p className="plugin-item-text">{description}</p>
-      </div>
-   </div>
+// ✅ Define type for PluginItem props
+interface PluginItemProps {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+const PluginItem: FC<PluginItemProps> = ({ icon, title, description }) => (
+  <div className="plugin-item text-center text-sm-start d-sm-flex">
+    <div className="plugin-icon">
+      <img src={icon} alt="icon" />
+    </div>
+    <div className="plugin-content">
+      <h4 className="plugin-item-title">{title}</h4>
+      <p className="plugin-item-text">{description}</p>
+    </div>
+  </div>
 );
 
-const FeaturesAndPlugins = () => {
-   return (
-      <div className="plugins-area space" id="features">
-         <div className="container">
-            <div className="row gy-30">
-               <div className="col-xl-6">
-                  <div className="plugin-box">
-                     <div className="title-area plugin-titlebox">
-                        <h2 className="sec-title">Awesome Features</h2>
-                        <p className="sec-text">
-                           This template is built with all modern and latest features. Developers can easily handle this.
-                        </p>
-                     </div>
+const FeaturesAndPlugins: React.FC = () => {
+  return (
+    <div className="plugins-area space" id="features">
+      <div className="container">
+        <div className="row gy-30">
+          <div className="col-xl-6">
+            <div className="plugin-box">
+              <div className="title-area plugin-titlebox">
+                <h2 className="sec-title">Awesome Features</h2>
+                <p className="sec-text">
+                  This template is built with all modern and latest features. Developers can easily handle this.
+                </p>
+              </div>
 
-                     <PluginItem icon={sassIcon} title="Made With Sass" description="Sass is a preprocessor scripting language for compiling into CSS." />
-                     <PluginItem icon={googleFontIcon} title="Google Fonts" description="Google Fonts is a computer font and web font service owned by Google." />
-                     <PluginItem icon={w3cIcon} title="W3C Validated Code" description="W3C Validation Service is a validator by the World Wide Web Consortium." />
-                     <PluginItem icon={codeIcon} title="Easy to Customize" description="Our code is always very much customize friendly and standard." />
-                     <PluginItem icon={docsIcon} title="Well Documented" description="Most of the customers love our detailed documentation you will also." />
-                     <PluginItem icon={supportIcon} title="Dedicated Support" description="Our support team is always ready to help you for any kind of support." />
-                     <PluginItem icon={responsiveIcon} title="Fully Responsive" description="This template is fully responsive for all kind of devices both big & small." />
-                  </div>
-               </div>
-
-
-               <div className="col-xl-6">
-                  <div className="plugin-box">
-                     <div className="title-area plugin-titlebox">
-                        <h2 className="sec-title">Included Plugins</h2>
-                        <p className="sec-text">We have included some popular plugins for free!</p>
-                     </div>
-
-                     <PluginItem icon={swiperIcon} title="Swiper Slider" description="Swiper is a responsive carousel jQuery plugin that supports multiple breakpoints." />
-                     <PluginItem icon={bootstrapIcon} title="Bootstrap 5" description="Bootstrap 5 is the latest version of the popular front-end development framework." />
-                     <PluginItem
-                        icon={reactIcon}
-                        title="Built with React"
-                        description="React is a modern JavaScript library for building fast and interactive UIs."
-                     />
-                     <PluginItem icon={seoIcon} title="SEO Optimized" description="Our code is SEO Optimized, It will help to index the page on search engine." />
-                     <PluginItem icon={wooIcon} title="WooCommerce Ready" description="Woocommerce features are digital tools that enable businesses to conduct online transactions and manage online stores." />
-                     <PluginItem icon={gsapIcon} title="GSAP Animation" description="Professional-grade JavaScript animation for the modern web, Crazy fast," />
-                     <PluginItem icon={cf7Icon} title="Contact Form 7" description="A working form with Ajax is a form that uses the Ajax (Asynchronous JavaScript and XML) technology." />
-                  </div>
-               </div>
+              <PluginItem icon={sassIcon} title="Made With Sass" description="Sass is a preprocessor scripting language for compiling into CSS." />
+              <PluginItem icon={googleFontIcon} title="Google Fonts" description="Google Fonts is a computer font and web font service owned by Google." />
+              <PluginItem icon={w3cIcon} title="W3C Validated Code" description="W3C Validation Service is a validator by the World Wide Web Consortium." />
+              <PluginItem icon={codeIcon} title="Easy to Customize" description="Our code is always very much customize friendly and standard." />
+              <PluginItem icon={docsIcon} title="Well Documented" description="Most of the customers love our detailed documentation you will also." />
+              <PluginItem icon={supportIcon} title="Dedicated Support" description="Our support team is always ready to help you for any kind of support." />
+              <PluginItem icon={responsiveIcon} title="Fully Responsive" description="This template is fully responsive for all kind of devices both big & small." />
             </div>
-         </div>
+          </div>
+
+          <div className="col-xl-6">
+            <div className="plugin-box">
+              <div className="title-area plugin-titlebox">
+                <h2 className="sec-title">Included Plugins</h2>
+                <p className="sec-text">We have included some popular plugins for free!</p>
+              </div>
+
+              <PluginItem icon={swiperIcon} title="Swiper Slider" description="Swiper is a responsive carousel jQuery plugin that supports multiple breakpoints." />
+              <PluginItem icon={bootstrapIcon} title="Bootstrap 5" description="Bootstrap 5 is the latest version of the popular front-end development framework." />
+              <PluginItem icon={reactIcon} title="Built with React" description="React is a modern JavaScript library for building fast and interactive UIs." />
+              <PluginItem icon={seoIcon} title="SEO Optimized" description="Our code is SEO Optimized, It will help to index the page on search engine." />
+              <PluginItem icon={wooIcon} title="WooCommerce Ready" description="Woocommerce features are digital tools that enable businesses to conduct online transactions and manage online stores." />
+              <PluginItem icon={gsapIcon} title="GSAP Animation" description="Professional-grade JavaScript animation for the modern web, Crazy fast," />
+              <PluginItem icon={cf7Icon} title="Contact Form 7" description="A working form with Ajax is a form that uses the Ajax (Asynchronous JavaScript and XML) technology." />
+            </div>
+          </div>
+        </div>
       </div>
-   );
+    </div>
+  );
 };
 
 export default FeaturesAndPlugins;

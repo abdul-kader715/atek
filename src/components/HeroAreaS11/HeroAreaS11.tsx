@@ -1,7 +1,7 @@
-import hero11bg from "../../img/bg/hero11-bg.png";
+import hero11bg from "../../img/bg/hero11-bg.webp";
 import shap1 from "../../img/shape/hero11-shap1.png";
 import shap2 from "../../img/shape/hero11-shap2.png";
-import video from "../../img/hero/hero-video-img.png";
+import video from "../../img/hero/hero-video-img.webp";
 import { Link } from "react-router-dom";
 import VideoModal from "../ModalVideo/ModalVideo";
 import type { FC } from "react";

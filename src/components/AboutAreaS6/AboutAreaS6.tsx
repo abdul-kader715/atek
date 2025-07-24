@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { Link } from 'react-router-dom';
-import bg from '../../img/bg/shape_bg_1.png';
+import bg from '../../img/bg/shape_bg_1.webp';
 import ab1 from '../../img/normal/about_5_1.jpg';
 
 interface AboutAreaS6Props {

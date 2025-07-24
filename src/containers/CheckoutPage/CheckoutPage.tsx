@@ -8,7 +8,6 @@ import GsapAnimetion from '../../components/GsapAnimetion/GsapAnimetion';
 
 interface CheckoutPageProps {
     children?: ReactNode;
-    // Add any other props your component might receive
 }
 
 const CheckoutPage: FC <CheckoutPageProps> = (_props) => {

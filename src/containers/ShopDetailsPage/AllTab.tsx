@@ -1,8 +1,8 @@
 import  { type FC } from 'react';
-import Athor1 from '../../img/blog/comment-author-1.jpg';
-import Athor2 from '../../img/blog/comment-author-2.jpg';
-import Athor3 from '../../img/blog/comment-author-3.jpg';
-import Athor4 from '../../img/blog/comment-author-4.jpg';
+import Athor1 from '../../img/blog/comment-author-1.webp';
+import Athor2 from '../../img/blog/comment-author-2.webp';
+import Athor3 from '../../img/blog/comment-author-3.webp';
+import Athor4 from '../../img/blog/comment-author-4.webp';
 import ReviewForm from './ReviewForm';
 
 const AllTab: FC = () => {

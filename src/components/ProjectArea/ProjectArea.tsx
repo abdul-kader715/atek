@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ProjectData from '../../api/project';
-import bgimg from '../../img/bg/process_bg_1.jpg';
+import bgimg from '../../img/bg/process_bg_1.webp';
 
 interface ProjectItem {
   slug: string;

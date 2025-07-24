@@ -1,4 +1,4 @@
-import React, { type FC } from 'react';
+import { type FC } from 'react';
 
 import featureIcon1 from '../../img/icon/fea-5-1.svg';
 import featureIcon2 from '../../img/icon/fea-5-2.svg';

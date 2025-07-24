@@ -1,5 +1,5 @@
 import CountUp from 'react-countup';
-import bgimg from '../../img/bg/contact_bg_2.jpg';
+import bgimg from '../../img/bg/contact_bg_2.webp';
 import ContactForm from '../ContactForm/ContactForm';
 import type { FC } from 'react';
 

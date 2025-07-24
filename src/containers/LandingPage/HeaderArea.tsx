@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, type MouseEvent } from 'react';
 import logo from './img/logo.svg';
 
-const MobileMenu = ({ isOpen, onClose, onNavClick }) => {
+interface MobileMenuProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onNavClick: (e: MouseEvent<HTMLAnchorElement>, id: string) => void;
+}
+
+const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onNavClick }) => {
   return (
     <div className={`th-menu-wrapper ${isOpen ? 'th-body-visible' : ''}`} data-lenis-prevent>
       <div className="th-menu-area">
-        <button
-          className={`th-menu-toggle ${isOpen ? 'th-active' : ''}`}
-          onClick={onClose}
-        >
+        <button className={`th-menu-toggle ${isOpen ? 'th-active' : ''}`} onClick={onClose}>
           ✕
         </button>
         <div className="mobile-logo">
@@ -27,9 +30,9 @@ const MobileMenu = ({ isOpen, onClose, onNavClick }) => {
   );
 };
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [isSticky, setIsSticky] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,12 +43,12 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNavClick = (e, id) => {
+  const handleNavClick = (e: MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     const target = document.getElementById(id);
     if (target) {
       target.scrollIntoView({ behavior: 'smooth' });
-      setMenuOpen(false); // Close mobile menu after click
+      setMenuOpen(false); // Close mobile menu after navigation
     }
   };
 

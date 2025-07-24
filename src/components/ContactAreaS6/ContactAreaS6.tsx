@@ -1,4 +1,4 @@
-import bgimg from '../../img/bg/contact_bg_7.jpg';
+import bgimg from '../../img/bg/contact_bg_7.webp';
 import VideoModal from '../ModalVideo/ModalVideo';
 import ContactForm from '../ContactForm/ContactForm';
 import type { FC } from 'react';

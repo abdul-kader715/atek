@@ -12,7 +12,6 @@ import GsapAnimetion from '../../components/GsapAnimetion/GsapAnimetion';
 
 interface ShopDetailsItem {
   slug: string;
-  // Add other properties of your shop item here
   [key: string]: any;
 }
 
@@ -21,7 +20,6 @@ const ShopDetails: React.FC = () => {
   const ShopDetailsItem: ShopDetailsItem | undefined = ShopDetailApi.find(item => item.slug === slug);
   
   if (!ShopDetailsItem) {
-    // Handle case where item is not found
     return <div>Product not found</div>;
   }
 

@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 import { Link } from 'react-router-dom';
-import Bgimg from '../../img/bg/gallery_bg_1.jpg';
+import Bgimg from '../../img/bg/gallery_bg_1.webp';
 import GalleryPopup from '../GalleryS2/GalleryS2';
 
 interface GalleryAreaS2Props {

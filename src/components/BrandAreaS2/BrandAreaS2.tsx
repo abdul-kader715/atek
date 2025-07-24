@@ -1,4 +1,4 @@
-import React, { type FC } from 'react';
+import { type FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import brand1 from '../../img/brand/brand_2_1.svg';
 import brand2 from '../../img/brand/brand_2_2.svg';

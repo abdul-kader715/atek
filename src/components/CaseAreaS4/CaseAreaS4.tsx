@@ -3,13 +3,13 @@ import Isotope from 'isotope-layout';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import caseImg1 from '../../img/case/case_4_1.jpg';
-import caseImg2 from '../../img/case/case_4_2.jpg';
-import caseImg3 from '../../img/case/case_4_3.jpg';
-import caseImg4 from '../../img/case/case_4_4.jpg';
-import caseImg5 from '../../img/case/case_4_5.jpg';
-import caseImg6 from '../../img/case/case_4_6.jpg';
-import caseImg7 from '../../img/case/case_4_7.jpg';
+import caseImg1 from '../../img/case/case_4_1.webp';
+import caseImg2 from '../../img/case/case_4_2.webp';
+import caseImg3 from '../../img/case/case_4_3.webp';
+import caseImg4 from '../../img/case/case_4_4.webp';
+import caseImg5 from '../../img/case/case_4_5.webp';
+import caseImg6 from '../../img/case/case_4_6.webp';
+import caseImg7 from '../../img/case/case_4_7.webp';
 
 const caseData = [
   { id: 1, categories: ['case1', 'case3'], img: caseImg1 },

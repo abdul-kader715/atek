@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectData from '../../api/project';
-import Bgimg from '../../img/bg/project_2_bg.jpg';
+import Bgimg from '../../img/bg/project_2_bg.webp';
 import shape from '../../img/shape/sv-shape.png';
 
 interface ProjectAreaS4Props {

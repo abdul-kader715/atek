@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ServiceData from '../../api/service';
-import bgimg from '../../img/bg/service_bg_4.jpg';
+import bgimg from '../../img/bg/service_bg_4.webp';
 import left from '../../img/icon/left-arrow2.svg';
 import right from '../../img/icon/right-arrow2.svg';
 

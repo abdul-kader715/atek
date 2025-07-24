@@ -305,7 +305,7 @@
         position: absolute;
         inset: 0;
         background-color: $smoke-color;
-        mask-image: url("../img/normal/price-shape.png");
+        mask-image: url("../../../img/normal/price-shape.png");
         mask-size: 100% 100%;
         mask-position: bottom center;
         mask-repeat: no-repeat;
@@ -369,7 +369,7 @@
             left: -19%;
             min-width: 200px;
             height: 200px;
-            background-image: url("../img/normal/price-shape2.png");
+            background-image: url("../../../img/normal/price-shape2.png");
             mask-size: cover;
             mask-repeat: no-repeat;
             z-index: -1;

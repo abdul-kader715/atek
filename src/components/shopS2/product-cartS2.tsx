@@ -8,7 +8,7 @@ interface Product {
   price: number;
   delPrice?: number;
   proImg: string;
-  [key: string]: any; // allows extra props if needed
+  [key: string]: any; 
 }
 
 interface ProductCartProps {
@@ -37,19 +37,7 @@ const ProductCart: React.FC<ProductCartProps> = ({ product }) => {
     Cookies.set("carts", JSON.stringify(cart), { expires: 30 });
   };
 
-  const handleAddToWishlist = () => {
-    let wishlist: Product[] =
-      Cookies.get("wishlist") != null
-        ? JSON.parse(Cookies.get("wishlist") as string)
-        : [];
 
-    const alreadyInWishlist = wishlist.find((item) => item.id === product.id);
-
-    if (!alreadyInWishlist) {
-      wishlist.push(product);
-      Cookies.set("wishlist", JSON.stringify(wishlist), { expires: 30 });
-    }
-  };
 
   return (
     <div className="th-product list-view">

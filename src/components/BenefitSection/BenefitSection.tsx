@@ -6,11 +6,11 @@ import { EffectFade, Navigation, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper/types';
 
-import benefit1 from '../../img/benefit/benefit_bg_1_1.jpg';
-import benefit2 from '../../img/benefit/benefit_bg_1_2.jpg';
-import benefit3 from '../../img/benefit/benefit_bg_1_3.jpg';
-import benefit4 from '../../img/benefit/benefit_bg_1_4.jpg';
-import benefit5 from '../../img/benefit/benefit_bg_1_5.jpg';
+import benefit1 from '../../img/benefit/benefit_bg_1_1.webp';
+import benefit2 from '../../img/benefit/benefit_bg_1_2.webp';
+import benefit3 from '../../img/benefit/benefit_bg_1_3.webp';
+import benefit4 from '../../img/benefit/benefit_bg_1_4.webp';
+import benefit5 from '../../img/benefit/benefit_bg_1_5.webp';
 import arrowLeft from '../../img/icon/left-arrow2.svg';
 import arrowRight from '../../img/icon/right-arrow2.svg';
 

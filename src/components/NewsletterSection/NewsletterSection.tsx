@@ -1,5 +1,5 @@
 import { type FC, type FormEvent } from 'react';
-import newsletterBg from '../../img/bg/subscribe_bg_1.png';
+import newsletterBg from '../../img/bg/subscribe_bg_1.webp';
 import newsletterImg from '../../img/normal/newsletter-img.png';
 
 interface NewsletterSectionProps {
@@ -9,7 +9,7 @@ interface NewsletterSectionProps {
 const NewsletterSection: FC<NewsletterSectionProps> = ({ className = '' }) => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add subscription logic here if needed
+    
   };
 
   return (

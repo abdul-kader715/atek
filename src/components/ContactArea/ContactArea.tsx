@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import bgimg from '../../img/bg/contact_bg_1.jpg';
+import bgimg from '../../img/bg/contact_bg_1.webp';
 import ContactForm from '../ContactForm/ContactForm';
 import type { FC } from 'react';
 

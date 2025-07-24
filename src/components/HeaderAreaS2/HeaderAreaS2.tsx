@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import pattern from '../../img/bg/line-pattern.png';
+import pattern from '../../img/bg/line-pattern.webp';
 import search from '../../img/icon/search.svg';
 import LogoMobile from '../../img/logo2.svg';
 

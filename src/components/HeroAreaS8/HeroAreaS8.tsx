@@ -3,10 +3,10 @@ import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect } from 'react';
 
-import hero_bg from '../../img/bg/hero_bg_8_1.png';
-import hero1 from '../../img/hero/hero_8_1.jpg';
-import hero2 from '../../img/hero/hero_8_2.jpg';
-import hero3 from '../../img/hero/hero_8_3.jpg';
+import hero_bg from '../../img/bg/hero_bg_8_1.webp';
+import hero1 from '../../img/hero/hero_8_1.webp';
+import hero2 from '../../img/hero/hero_8_2.webp';
+import hero3 from '../../img/hero/hero_8_3.webp';
 import bullets from '../../img/shape/bullets-circle.png';
 import shape from '../../img/shape/hero-8-shape.png';
 

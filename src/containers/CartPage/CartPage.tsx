@@ -13,7 +13,6 @@ interface CartItem {
   title: string;
   price: number;
   quantity?: number;
-  // Add other product properties as needed
 }
 
 const CartPage: FC = () => {
@@ -104,7 +103,8 @@ const CartPage: FC = () => {
                       <span className="cart-productname">{item.title}</span>
                     </td>
                     <td data-title="Price">
-                      <span className="amount"><bdi><span>$</span>{item.price.toFixed(2)}</bdi></span>
+                      <span className="amount"><bdi><span>$</span>{parseFloat(item.price?.toString()).toFixed(2) }</bdi></span>
+                      
                     </td>
                     <td data-title="Quantity">
                       <div className="quantity">

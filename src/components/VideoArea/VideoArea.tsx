@@ -1,5 +1,5 @@
 import { type FC } from 'react';
-import video_bg from '../../img/bg/video_bg_2.jpg';
+import video_bg from '../../img/bg/video_bg_2.webp';
 import CircleTextS2 from '../CircleTextS2/CircleTextS2';
 import VideoModal from '../ModalVideo/ModalVideo';
 

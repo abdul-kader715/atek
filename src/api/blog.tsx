@@ -1,47 +1,47 @@
 
 /* Image */
-import img1 from "../img/blog/blog_1_1.jpg";
-import img2 from "../img/blog/blog_1_2.jpg";
-import img3 from "../img/blog/blog_1_3.jpg";
-import img5 from "../img/blog/blog_3_1.jpg";
-import img6 from "../img/blog/blog_3_2.jpg";
-import img7 from "../img/blog/blog_3_3.jpg";
-import img8 from "../img/blog/blog_5_1.jpg";
-import img9 from "../img/blog/blog_5_2.jpg";
-import img10 from "../img/blog/blog_5_3.jpg";
+import img1 from "../img/blog/blog_1_1.webp";
+import img2 from "../img/blog/blog_1_2.webp";
+import img3 from "../img/blog/blog_1_3.webp";
+import img5 from "../img/blog/blog_3_1.webp";
+import img6 from "../img/blog/blog_3_2.webp";
+import img7 from "../img/blog/blog_3_3.webp";
+import img8 from "../img/blog/blog_5_1.webp";
+import img9 from "../img/blog/blog_5_2.webp";
+import img10 from "../img/blog/blog_5_3.webp";
 
-import grid1 from "../img/blog/blog_1_3.jpg";
+import grid1 from "../img/blog/blog_1_3.webp";
 
-import bloggrig1 from "../img/blog/blog_2_1.jpg";
-import bloggrig2 from "../img/blog/blog_2_2.jpg";
-import bloggrig3 from "../img/blog/blog_2_3.jpg";
+import bloggrig1 from "../img/blog/blog_2_1.webp";
+import bloggrig2 from "../img/blog/blog_2_2.webp";
+import bloggrig3 from "../img/blog/blog_2_3.webp";
 
-import blog_7_1 from "../img/blog/blog_7_1.jpg";
-import blog_7_2 from "../img/blog/blog_7_2.jpg";
-import blog_7_3 from "../img/blog/blog_7_3.jpg";
+import blog_7_1 from "../img/blog/blog_7_1.webp";
+import blog_7_2 from "../img/blog/blog_7_2.webp";
+import blog_7_3 from "../img/blog/blog_7_3.webp";
 
-import blog_8_1 from "../img/blog/blog_8_1.jpg";
-import blog_8_2 from "../img/blog/blog_8_2.jpg";
-import blog_8_3 from "../img/blog/blog_8_3.jpg";
+import blog_8_1 from "../img/blog/blog_8_1.webp";
+import blog_8_2 from "../img/blog/blog_8_2.webp";
+import blog_8_3 from "../img/blog/blog_8_3.webp";
 
-import bloggrig91 from "../img/blog/blog_9_1.jpg";
-import bloggrig92 from "../img/blog/blog_9_2.jpg";
-import bloggrig93 from "../img/blog/blog_9_3.jpg";
+import bloggrig91 from "../img/blog/blog_9_1.webp";
+import bloggrig92 from "../img/blog/blog_9_2.webp";
+import bloggrig93 from "../img/blog/blog_9_3.webp";
 
-import blog_12_1 from "../img/blog/blog_12_1.jpg";
-import blog_12_2 from "../img/blog/blog_12_2.jpg";
-import blog_12_3 from "../img/blog/blog_12_3.jpg";
+import blog_12_1 from "../img/blog/blog_12_1.webp";
+import blog_12_2 from "../img/blog/blog_12_2.webp";
+import blog_12_3 from "../img/blog/blog_12_3.webp";
 
-import blog_10_1 from "../img/blog/blog_10_1.jpg";
-import blog_10_2 from "../img/blog/blog_10_2.jpg";
-import blog_10_3 from "../img/blog/blog_10_3.jpg";
+import blog_10_1 from "../img/blog/blog_10_1.webp";
+import blog_10_2 from "../img/blog/blog_10_2.webp";
+import blog_10_3 from "../img/blog/blog_10_3.webp";
 
-import blog_13_1 from "../img/blog/blog_13_1.jpg";
-import blog_13_2 from "../img/blog/blog_13_2.jpg";
-import blog_13_3 from "../img/blog/blog_13_3.jpg";
-import blog_14_1 from "../img/blog/blog_14_1.jpg";
-import blog_14_2 from "../img/blog/blog_14_2.jpg";
-import blog_14_3 from "../img/blog/blog_14_3.jpg";
+import blog_13_1 from "../img/blog/blog_13_1.webp";
+import blog_13_2 from "../img/blog/blog_13_2.webp";
+import blog_13_3 from "../img/blog/blog_13_3.webp";
+import blog_14_1 from "../img/blog/blog_14_1.webp";
+import blog_14_2 from "../img/blog/blog_14_2.webp";
+import blog_14_3 from "../img/blog/blog_14_3.webp";
 
 
 const BlogData = [

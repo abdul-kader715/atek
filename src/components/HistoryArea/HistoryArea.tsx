@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import bg_2_1 from '../../img/bg/h-bg_2_1.jpg';
-import bg_2_2 from '../../img/bg/h-bg_2_2.jpg';
+import bg_2_1 from '../../img/bg/h-bg_2_1.webp';
+import bg_2_2 from '../../img/bg/h-bg_2_2.webp';
 import currency from '../../img/icon/currency.svg';
 import currency2 from '../../img/icon/web-currency.svg';
 import type { FC } from 'react';

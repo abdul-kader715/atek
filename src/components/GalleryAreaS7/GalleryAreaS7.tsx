@@ -2,17 +2,17 @@ import imagesLoaded from 'imagesloaded';
 import Isotope from 'isotope-layout';
 import { useEffect, useRef, useState } from 'react';
 
-import gallery1 from '../../img/gallery/gallery_10_1.jpg';
-import gallery2 from '../../img/gallery/gallery_10_2.jpg';
-import gallery3 from '../../img/gallery/gallery_10_3.jpg';
-import gallery5 from '../../img/gallery/gallery_10_4.jpg';
-import gallery8 from '../../img/gallery/gallery_10_5.jpg';
-import gallery6 from '../../img/gallery/gallery_10_6.jpg';
-import gallery4 from '../../img/gallery/gallery_10_7.jpg';
-import gallery7 from '../../img/gallery/gallery_10_8.jpg';
-import gallery11 from '../../img/gallery/gallery_10_9.jpg';
-import gallery10 from '../../img/gallery/gallery_11.jpg';
-import gallery9 from '../../img/gallery/gallery_11_1.jpg';
+import gallery1 from '../../img/gallery/gallery_10_1.webp';
+import gallery2 from '../../img/gallery/gallery_10_2.webp';
+import gallery3 from '../../img/gallery/gallery_10_3.webp';
+import gallery5 from '../../img/gallery/gallery_10_4.webp';
+import gallery8 from '../../img/gallery/gallery_10_5.webp';
+import gallery6 from '../../img/gallery/gallery_10_6.webp';
+import gallery4 from '../../img/gallery/gallery_10_7.webp';
+import gallery7 from '../../img/gallery/gallery_10_8.webp';
+import gallery11 from '../../img/gallery/gallery_10_9.webp';
+import gallery10 from '../../img/gallery/gallery_11.webp';
+import gallery9 from '../../img/gallery/gallery_11_1.webp';
 
 const images: string[] = [
   gallery1, gallery2, gallery3, gallery4, gallery5, gallery6,

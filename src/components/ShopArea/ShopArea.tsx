@@ -8,8 +8,8 @@ interface Product {
   id: number;
   title: string;
   slug: string;
-  price: number;
-  delPrice?: number;
+  price: number | string;
+  delPrice?: number | string;
   proImg: string;
   Tag?: string;
   [key: string]: any;
@@ -47,7 +47,7 @@ const RecentlyViewed: FC = () => {
         }}
         className="has-shadow"
       >
-        {(api as Product[]).map((product, index) => (
+        {api.map((product:Product, index) => (
           <SwiperSlide className="style2" key={product.id || index}>
             <ProductCart product={product} />
           </SwiperSlide>

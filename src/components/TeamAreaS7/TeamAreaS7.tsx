@@ -4,7 +4,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import teamData from '../../api/team';
-import teamBg from '../../img/bg/team_bg_4.jpg';
+import teamBg from '../../img/bg/team_bg_4.webp';
 import leftArrow from '../../img/icon/service-left.svg';
 import rightArrow from '../../img/icon/service-right.svg';
 

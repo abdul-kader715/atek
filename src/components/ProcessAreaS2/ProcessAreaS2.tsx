@@ -2,7 +2,7 @@ import { type FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-import bgImage from '../../img/bg/process-1-3-bg.jpg';
+import bgImage from '../../img/bg/process-1-3-bg.webp';
 import processIcon1 from '../../img/icon/process-icon-1.svg';
 import processIcon2 from '../../img/icon/process-icon-2.svg';
 import processIcon3 from '../../img/icon/process-icon-3.svg';

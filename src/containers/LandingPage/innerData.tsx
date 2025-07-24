@@ -1,28 +1,38 @@
-import about from './img/pages/about.jpg';
-import about2 from './img/pages/about2.jpg';
-import blogDetails from './img/pages/blog-details.jpg';
-import blogGrid from './img/pages/blog-grid.jpg';
-import blog from './img/pages/blog.jpg';
-import career from './img/pages/career.jpg';
-import cart from './img/pages/cart.jpg';
-import checkout from './img/pages/checkout.jpg';
-import contact2 from './img/pages/contact-2.jpg';
-import contact from './img/pages/contact.jpg';
-import error from './img/pages/error.jpg';
-import faq from './img/pages/faq.jpg';
-import gallery from './img/pages/gallery.jpg';
-import price from './img/pages/price.jpg';
-import projectDetails from './img/pages/project-details.jpg';
-import projectGrid from './img/pages/project-grid.jpg';
-import serviceDetails from './img/pages/service-details.jpg';
-import service from './img/pages/service.jpg';
-import shopDetails from './img/pages/shop-details.jpg';
-import shop from './img/pages/shop.jpg';
-import teamGuide from './img/pages/team-guide.jpg';
-import teamGuiderDetails from './img/pages/team-guider-details.jpg';
-import wishlist from './img/pages/wishlist.jpg';
+// Importing all images
+import about from './img/pages/about.webp';
+import about2 from './img/pages/about2.webp';
+import blogDetails from './img/pages/blog-details.webp';
+import blogGrid from './img/pages/blog-grid.webp';
+import blog from './img/pages/blog.webp';
+import career from './img/pages/career.webp';
+import cart from './img/pages/cart.webp';
+import checkout from './img/pages/checkout.webp';
+import contact2 from './img/pages/contact-2.webp';
+import contact from './img/pages/contact.webp';
+import error from './img/pages/error.webp';
+import faq from './img/pages/faq.webp';
+import gallery from './img/pages/gallery.webp';
+import price from './img/pages/price.webp';
+import projectDetails from './img/pages/project-details.webp';
+import projectGrid from './img/pages/project-grid.webp';
+import serviceDetails from './img/pages/service-details.webp';
+import service from './img/pages/service.webp';
+import shopDetails from './img/pages/shop-details.webp';
+import shop from './img/pages/shop.webp';
+import teamGuide from './img/pages/team-guide.webp';
+import teamGuiderDetails from './img/pages/team-guider-details.webp';
+import wishlist from './img/pages/wishlist.webp';
 
-const innerPages = [
+// Define a type for each inner page item
+export interface InnerPage {
+   img: string;
+   alt: string;
+   link: string;
+   title: string;
+}
+
+// Typed array of inner pages
+const innerPages: InnerPage[] = [
    { img: about, alt: 'about', link: '/about', title: 'About Page' },
    { img: about2, alt: 'about2', link: '/about2', title: 'About 2 Page' },
    { img: shop, alt: 'shop', link: '/shop', title: 'Shop Page' },

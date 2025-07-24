@@ -1,6 +1,6 @@
 import type { FC, RefObject } from 'react';
 import { Link } from 'react-router-dom';
-import bgImage from '../../img/bg/history_bg_1.jpg';
+import bgImage from '../../img/bg/history_bg_1.webp';
 import icon1 from '../../img/icon/history_1_1.svg';
 import icon2 from '../../img/icon/history_1_2.svg';
 import icon3 from '../../img/icon/history_1_3.svg';

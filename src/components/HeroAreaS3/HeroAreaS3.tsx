@@ -1,15 +1,15 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ScrollLink from '../ScrollLink/ScrollLink';
 
-import Bg1 from '../../img/hero/hero_bg_3_1.jpg';
-import Bg2 from '../../img/hero/hero_bg_3_2.jpg';
-import Bg3 from '../../img/hero/hero_bg_3_3.jpg';
-import Bg4 from '../../img/hero/hero_bg_3_4.jpg';
-import Bg5 from '../../img/hero/hero_bg_3_5.jpg';
-import Bg6 from '../../img/hero/hero_bg_3_6.jpg';
+import Bg1 from '../../img/hero/hero_bg_3_1.webp';
+import Bg2 from '../../img/hero/hero_bg_3_2.webp';
+import Bg3 from '../../img/hero/hero_bg_3_3.webp';
+import Bg4 from '../../img/hero/hero_bg_3_4.webp';
+import Bg5 from '../../img/hero/hero_bg_3_5.webp';
+import Bg6 from '../../img/hero/hero_bg_3_6.webp';
 import chipset from '../../img/icon/chipset.svg';
 import down from '../../img/icon/down-arrow.svg';
 import left from '../../img/icon/hero-arrow-left.svg';
@@ -49,7 +49,7 @@ const HeroSection = () => {
       },
    ];
 
-   const thumbsSwiperRef = useRef<null | any>(null);
+
 
    useEffect(() => {
       const animatedElements = document.querySelectorAll<HTMLElement>('[data-ani]');

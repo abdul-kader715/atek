@@ -1,5 +1,5 @@
 import { type FC } from 'react';
-import video_bg from '../../img/bg/video_bg_3.jpg';
+import video_bg from '../../img/bg/video_bg_3.webp';
 import VideoModal from '../ModalVideo/ModalVideo';
 
 const VideoAreaS3: FC = () => {

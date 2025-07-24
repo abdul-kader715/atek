@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 import { Link } from 'react-router-dom';
-import Cbg from '../../img/bg/cta_bg_3.jpg';
+import Cbg from '../../img/bg/cta_bg_3.webp';
 import app from '../../img/normal/app_mockup.png';
 import left from '../../img/normal/cta-left-img.png';
 import ShapeMockup from '../ShapeMockup/ShapeMockup';

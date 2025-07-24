@@ -4,8 +4,8 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper as SwiperClass } from 'swiper';
 
-import heroBg1 from '../../img/hero/hero_bg_12_1.jpg';
-import heroBg2 from '../../img/hero/hero_bg_12_2.jpg';
+import heroBg1 from '../../img/hero/hero_bg_12_1.webp';
+import heroBg2 from '../../img/hero/hero_bg_12_2.webp';
 import arrowLeft from '../../img/icon/left-arrow2.svg';
 import arrowRight from '../../img/icon/right-arrow2.svg';
 

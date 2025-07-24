@@ -5,7 +5,7 @@ import testimonial3 from '../../img/testimonial/testi_2_3.png';
 import testimonial4 from '../../img/testimonial/testi_2_4.png';
 import testimonial5 from '../../img/testimonial/testi_2_5.png';
 
-import MapImg from '../../img/bg/map.png';
+import MapImg from '../../img/bg/map.webp';
 import shape from '../../img/shape/shape_2_2.png';
 import small from '../../img/shape/small-cloud.png';
 import shape2 from '../../img/shape/shape_2_5.png';

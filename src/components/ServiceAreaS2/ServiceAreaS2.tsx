@@ -1,7 +1,7 @@
 import { useEffect, useState, type FC } from "react";
 import { Link } from 'react-router-dom';
 import ServiceData from '../../api/service';
-import servicBg from '../../img/bg/line-pattern2.png';
+import servicBg from '../../img/bg/line-pattern2.webp';
 import shape1 from '../../img/shape/shape_2_1.png';
 import shape2 from '../../img/shape/shape_2_2.png';
 import ShapeMockup from "../ShapeMockup/ShapeMockup";

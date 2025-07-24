@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import './modal.css';
 
 interface Product {
-  id: number;
-  title: string;
-  slug: string;
-  price: number;
-  delPrice?: number;
-  proImg: string;
+  id?: number;
+  title?: string;
+  slug?: string;
+  price?: number | string;
+  delPrice?: number | string;
+  proImg?: string;
   Tag?: string;
   [key: string]: any; 
 }

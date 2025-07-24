@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import TeamData from '../../api/team';
-import teamimg from '../../img/bg/team_bg_1.png';
+import teamimg from '../../img/bg/team_bg_1.webp';
 import type { FC } from 'react';
 
 interface TeamMember {

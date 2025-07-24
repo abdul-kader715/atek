@@ -2,7 +2,7 @@ import { useRef, useState, type FC } from 'react';
 import { EffectFade, Navigation, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import bgImage from '../../img/bg/testi_bg_1.jpg';
+import bgImage from '../../img/bg/testi_bg_1.webp';
 import thumb1 from '../../img/testimonial/testi-img-2_1.jpg';
 import thumb2 from '../../img/testimonial/testi-img-2_2.jpg';
 import thumb3 from '../../img/testimonial/testi-img-2_3.jpg';

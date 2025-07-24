@@ -47,10 +47,8 @@ import WishlistPage from './WishlistPage/WishlistPage';
 
 const App: FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [showFadeAnimation, setShowFadeAnimation] = useState<boolean>(false);
 
   useEffect(() => {
-    // Initialize Lenis smooth scrolling
     const lenis = new Lenis({
      
     });
@@ -65,7 +63,6 @@ const App: FC = () => {
     // Preloader timeout
     const timer = setTimeout(() => {
       setIsLoading(false);
-      setShowFadeAnimation(true);
     }, 2000);
 
     return () => {

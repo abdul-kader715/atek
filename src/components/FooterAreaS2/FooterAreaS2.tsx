@@ -1,7 +1,7 @@
 import { type FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import footer_bg from '../../img/bg/footer_bg-2.png';
+import footer_bg from '../../img/bg/footer_bg-2.webp';
 import envelope from '../../img/icon/envelope.svg';
 import location from '../../img/icon/location-dot.svg';
 import phone from '../../img/icon/phone.svg';
@@ -120,23 +120,23 @@ const FooterAreaS2: FC<FooterAreaS2Props> = ({ className = '' }) => {
 
       {/* Copyright */}
       <div className="copyright-wrap">
-        <div className="container">
-          <div className="row justify-content-lg-between align-items-center">
-            <div className="col-lg-6">
-              <p className="copyright-text">
-                Copyright © 2025 <Link onClick={ClickHandler} to="/home">Atek</Link>. All Rights Reserved.
-              </p>
+            <div className="container">
+               <div className="row justify-content-lg-between align-items-center">
+                  <div className="col-lg-6">
+                     <p className="copyright-text">Copyright © 2025 <Link onClick={ClickHandler} to="/home">Atek</Link>. All Rights Reserved.</p>
+                  </div>
+                  <div className="col-lg-6 text-center text-lg-end">
+                     <div className="footer-links">
+                        <ul>
+                           <li><Link onClick={ClickHandler} to="/about">Terms & Conditions</Link></li>
+                           <li><Link onClick={ClickHandler} to="/about">Careers</Link></li>
+                           <li><Link onClick={ClickHandler} to="/about">Privacy Policy</Link></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div className="col-lg-6 text-center text-lg-end">
-              <ul className="footer-links">
-                <li><Link onClick={ClickHandler} to="/about">Terms & Conditions</Link></li>
-                <li><Link onClick={ClickHandler} to="/about">Careers</Link></li>
-                <li><Link onClick={ClickHandler} to="/about">Privacy Policy</Link></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+         </div>
     </footer>
   );
 };

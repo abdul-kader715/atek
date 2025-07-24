@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent } from 'react';
+import { useState, type ChangeEvent, type FC } from 'react';
 import { Link } from 'react-router-dom';
 import CareerData from '../../api/career';
 
@@ -12,7 +12,7 @@ interface CareerItem {
   slug: string;
 }
 
-const JobSortAndPagination: React.FC = () => {
+const JobSortAndPagination: FC = () => {
   const [perPage, setPerPage] = useState<number>(9);
   const [sortOrder, setSortOrder] = useState<string>('menu_order');
   const [currentPage, setCurrentPage] = useState<number>(1);

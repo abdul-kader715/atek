@@ -5,11 +5,11 @@ import FooterArea from '../../components/FooterArea/FooterArea';
 import HeaderArea from '../../components/HeaderArea/HeaderArea';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
-import widget from '../../img/bg/widget_banner.jpg';
+import widget from '../../img/bg/widget_banner.webp';
 import check from '../../img/icon/price-check.svg';
-import details from '../../img/service/sv-details.jpg';
-import sv1 from '../../img/service/sv-sm-1.jpg';
-import sv2 from '../../img/service/sv-sm-2.jpg';
+import details from '../../img/service/sv-details.webp';
+import sv1 from '../../img/service/sv-sm-1.webp';
+import sv2 from '../../img/service/sv-sm-2.webp';
 import GsapAnimetion from '../../components/GsapAnimetion/GsapAnimetion';
 
 interface Service {

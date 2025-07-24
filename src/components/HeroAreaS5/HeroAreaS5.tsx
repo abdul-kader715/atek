@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import hero_bg from '../../img/bg/hero_bg_5_1.jpg';
-import hero_51 from '../../img/hero/hero_5_1_1.jpg';
-import hero_52 from '../../img/hero/hero_5_2_1.jpg';
+import hero_bg from '../../img/bg/hero_bg_5_1.webp';
+import hero_51 from '../../img/hero/hero_5_1_1.webp';
+import hero_52 from '../../img/hero/hero_5_2_1.webp';
 import left from '../../img/icon/left-arrow.svg';
 import right from '../../img/icon/right-arrow.svg';
 import shape1 from '../../img/shape/hero-5-shape-1.png';

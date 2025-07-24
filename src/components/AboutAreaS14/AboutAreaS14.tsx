@@ -2,7 +2,7 @@ import  { useEffect, useRef, useState, type FC } from 'react';
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-import abbg from '../../img/bg/about_bg_3.jpg';
+import abbg from '../../img/bg/about_bg_3.webp';
 import about_1 from '../../img/normal/about_14_1.png';
 import about_2 from '../../img/normal/about_14_2.png';
 import about_3 from '../../img/normal/about_14_3.png';

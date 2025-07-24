@@ -5,10 +5,10 @@ import FooterArea from '../../components/FooterArea/FooterArea';
 import HeaderArea from '../../components/HeaderArea/HeaderArea';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
-import recent1 from '../../img/blog/recent-post-3-1.jpg';
-import recent2 from '../../img/blog/recent-post-3-2.jpg';
-import recent3 from '../../img/blog/recent-post-3-3.jpg';
-import recent4 from '../../img/blog/recent-post-3-4.jpg';
+import recent1 from '../../img/blog/recent-post-3-1.webp';
+import recent2 from '../../img/blog/recent-post-3-2.webp';
+import recent3 from '../../img/blog/recent-post-3-3.webp';
+import recent4 from '../../img/blog/recent-post-3-4.webp';
 import GsapAnimetion from '../../components/GsapAnimetion/GsapAnimetion';
 
 interface CareerItem {

@@ -5,10 +5,10 @@ import FooterArea from '../../components/FooterArea/FooterArea';
 import HeaderArea from '../../components/HeaderArea/HeaderArea';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
-import case_dsc from '../../img/case/case-dsc.jpg';
-import sv_sm_1 from '../../img/service/sv-sm-1.jpg';
-import sv_sm_2 from '../../img/service/sv-sm-2.jpg';
-import widget_banner from '../../img/bg/widget_banner.jpg';
+import case_dsc from '../../img/case/case-dsc.webp';
+import sv_sm_1 from '../../img/service/sv-sm-1.webp';
+import sv_sm_2 from '../../img/service/sv-sm-2.webp';
+import widget_banner from '../../img/bg/widget_banner.webp';
 import GsapAnimetion from '../../components/GsapAnimetion/GsapAnimetion';
 
 interface CategoryItem {
@@ -26,7 +26,7 @@ const CasedetailsPage = () => {
 
     return (
         <Fragment>
-            <GsapAnimetion/>
+            <GsapAnimetion />
             <HeaderArea className={'th-header header-layout1'} />
             <PageTitle pageTitle={CategoryData.title} pagesub={'Case Study'} />
             <section className="space">

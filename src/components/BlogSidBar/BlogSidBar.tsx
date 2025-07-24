@@ -2,10 +2,10 @@ import React, { useState, useRef, type FormEvent } from "react";
 import SimpleReactValidator from "simple-react-validator";
 import { Link } from "react-router-dom";
 
-import recent1 from '../../img/blog/recent-post-1-1.jpg';
-import recent2 from '../../img/blog/recent-post-1-2.jpg';
-import recent3 from '../../img/blog/recent-post-1-3.jpg';
-import bannerBg from '../../img/bg/widget_banner.jpg';
+import recent1 from '../../img/blog/recent-post-1-1.webp';
+import recent2 from '../../img/blog/recent-post-1-2.webp';
+import recent3 from '../../img/blog/recent-post-1-3.webp';
+import bannerBg from '../../img/bg/widget_banner.webp';
 
 const BlogSidebar: React.FC = () => {
   const [search, setSearch] = useState<string>("");

@@ -1,29 +1,29 @@
 /* image */
-import p5 from '../img/case/case_2_1.jpg'
-import p6 from '../img/case/case_2_2.jpg'
-import p7 from '../img/case/case_2_3.jpg'
-import p8 from '../img/case/case_2_4.jpg'
-import p9 from '../img/case/case_2_5.jpg'
-import p10 from '../img/case/case_2_6.jpg'
-import p11 from '../img/case/case_2_7.jpg'
-import p12 from '../img/case/case_2_8.jpg'
+import p5 from '../img/case/case_2_1.webp'
+import p6 from '../img/case/case_2_2.webp'
+import p7 from '../img/case/case_2_3.webp'
+import p8 from '../img/case/case_2_4.webp'
+import p9 from '../img/case/case_2_5.webp'
+import p10 from '../img/case/case_2_6.webp'
+import p11 from '../img/case/case_2_7.webp'
+import p12 from '../img/case/case_2_8.webp'
 import p1 from '../img/process/process_1_1.jpg'
 import p2 from '../img/process/process_1_2.jpg'
 import p3 from '../img/process/process_1_3.jpg'
 import p4 from '../img/process/process_1_4.jpg'
-import p31 from '../img/project/project_1_1.jpg'
-import p32 from '../img/project/project_1_2.jpg'
-import p33 from '../img/project/project_1_3.jpg'
-import project_21 from '../img/project/project_2_1.jpg'
-import project_22 from '../img/project/project_2_2.jpg'
-import project_23 from '../img/project/project_2_3.jpg'
-import project_24 from '../img/project/project_2_4.jpg'
+import p31 from '../img/project/project_1_1.webp'
+import p32 from '../img/project/project_1_2.webp'
+import p33 from '../img/project/project_1_3.webp'
+import project_21 from '../img/project/project_2_1.webp'
+import project_22 from '../img/project/project_2_2.webp'
+import project_23 from '../img/project/project_2_3.webp'
+import project_24 from '../img/project/project_2_4.webp'
 
-import project_3_1 from '../img/project/project_3_1.jpg'
-import project_3_2 from '../img/project/project_3_2.jpg'
-import project_3_3 from '../img/project/project_3_3.jpg'
-import project_3_4 from '../img/project/project_3_4.jpg'
-import project_3_5 from '../img/project/project_3_2.jpg'
+import project_3_1 from '../img/project/project_3_1.webp'
+import project_3_2 from '../img/project/project_3_2.webp'
+import project_3_3 from '../img/project/project_3_3.webp'
+import project_3_4 from '../img/project/project_3_4.webp'
+import project_3_5 from '../img/project/project_3_2.webp'
 
 const ProjectData = [
    {
@@ -96,7 +96,7 @@ const ProjectData = [
       num: '06',
       title: 'Web & Mobile Development',
       subtitle: 'Development',
-      subtitle3:'Ai Mechanigm',
+      subtitle3: 'Ai Mechanigm',
       pimg: p6,
       slug: '6'
    },

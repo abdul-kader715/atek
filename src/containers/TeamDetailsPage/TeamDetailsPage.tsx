@@ -5,7 +5,7 @@ import FooterArea from '../../components/FooterArea/FooterArea';
 import HeaderArea from '../../components/HeaderArea/HeaderArea';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
-import team_details from '../../img/team/team-details.jpg';
+import team_details from '../../img/team/team-details.webp';
 import BrandArea from '../../components/BrandArea/BrandArea';
 import GsapAnimetion from '../../components/GsapAnimetion/GsapAnimetion';
 
@@ -13,7 +13,6 @@ interface Team {
   slug: string;
   name: string;
   designation: string;
-  // Add any other fields your teamData might have
 }
 
 const TeamDetailsPage: FC = () => {

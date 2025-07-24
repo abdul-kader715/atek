@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CategoryData from '../../api/category';
-import categorybg from '../../img/bg/category_bg_1.png';
+import categorybg from '../../img/bg/category_bg_1.webp';
 
 interface CategoryAreaProps {
   className?: string;

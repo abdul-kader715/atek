@@ -3,7 +3,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import teamData from "../../api/team";
-import bgimg from '../../img/bg/team_bg_2.jpg';
+import bgimg from '../../img/bg/team_bg_2.webp';
 import left from '../../img/icon/left-arrow2.svg';
 import right from '../../img/icon/right-arrow2.svg';
 import { Link } from "react-router-dom";

@@ -3,9 +3,9 @@ import { EffectFade, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 import BlogData from '../../api/blog';
-import blog1 from '../../img/blog/blog-s-1-2.jpg';
-import blog2 from '../../img/blog/blog-s-1-3.jpg';
-import blog3 from '../../img/blog/blog-s-1-4.jpg';
+import blog1 from '../../img/blog/blog-s-1-2.webp';
+import blog2 from '../../img/blog/blog-s-1-3.webp';
+import blog3 from '../../img/blog/blog-s-1-4.webp';
 import cat from '../../img/icon/map.svg';
 import VideoModal from '../ModalVideo/ModalVideo';
 import BlogSidBar from '../BlogSidBar/BlogSidBar';
@@ -16,7 +16,7 @@ interface BlogItem {
   title: string;
   grid?: string;
   imageUrl?: string;
-  minet?: string; // You can add other properties if needed from your blog data shape
+  minet?: string; 
 }
 
 const BlogPageArea: FC = () => {
